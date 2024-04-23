@@ -12,13 +12,13 @@ import com.Cenima.Classes.Film;
 public class FilmsDAOImp implements FilmsDAO{
 	
 	
-	private String INSERT_FILM_SQL="INSERT INTO nom_de_la_table (title, category, description, show_time, price, film_duration, film_pic, ticket_number) \r\n"
+	private String INSERT_FILM_SQL="INSERT INTO films (title, category, description, show_time, price, film_duration, film_pic, ticket_number) \r\n"
 			+ "VALUES (?, ?, ?, ?, ?, ?, ?, ?);\r\n"
 			+ "";
 	private String UPDATE_FILM_SQL="";
 	private String DELETE_FILM_SQL="";
-	private String SELECT_ALL_FILM_SQL="";
-	private String SELECT_FILM_BY_ID_SQL="";
+	private String SELECT_ALL_FILM_SQL="select * from films";
+	private String SELECT_FILM_BY_ID_SQL="select * from films where film_id = ?";
 
 
 
@@ -60,9 +60,24 @@ public class FilmsDAOImp implements FilmsDAO{
 	}
 
 	@Override
-	public Film selectFilmById(int idFilm) {
-		// TODO Auto-generated method stub
-		return null;
+	public Film selectFilmById(int idFilm) throws SQLException {
+		Film film = null;
+		Connection connection = DataBaseManager.getConnection();
+		PreparedStatement statement = connection.prepareStatement(SELECT_FILM_BY_ID_SQL);
+		statement.setInt(1, idFilm);
+		ResultSet rs = statement.executeQuery();
+		while(rs.next()) {
+			String title = rs.getString("title");
+			String category = rs.getString("category");
+			String description = rs.getString("description");
+			String show_time = rs.getString("show_time");
+			String price = rs.getString("price");
+			String film_duration = rs.getString("film_duration");
+			String film_pic = rs.getString("film_pic");
+			String ticket_number = rs.getString("ticket_number");
+			film = new Film(title,category,description,show_time,price,film_duration,film_pic,ticket_number);
+		}
+		return film;
 	}
 
 	@Override
