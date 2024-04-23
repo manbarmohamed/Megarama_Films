@@ -6,7 +6,7 @@ public class Film {
 	
 	
 	///constructors ////
-	public Film(Integer id_fiml, String title, String category, String description, Date show_time, String price,
+	public Film(Integer id_fiml, String title, String category, String description, String show_time, String price,
 			String film_duration, String film_pic, String ticket) {
 		super();
 		this.id_fiml = id_fiml;
@@ -21,7 +21,7 @@ public class Film {
 	}
 	
 	
-	public Film(String title, String category, String description, Date show_time, String price, String film_duration,
+	public Film(String title, String category, String description, String show_time, String price, String film_duration,
 			String film_pic, String ticket) {
 		super();
 		this.title = title;
@@ -40,7 +40,7 @@ public class Film {
 	private String title;
 	private String category;
 	private String description;
-	private Date show_time;
+	private String show_time;
 	private String price ;
 	private String film_duration;
 	private String film_pic;
@@ -71,10 +71,10 @@ public class Film {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	public Date getShow_time() {
+	public String getShow_time() {
 		return show_time;
 	}
-	public void setShow_time(Date show_time) {
+	public void setShow_time(String show_time) {
 		this.show_time = show_time;
 	}
 	public String getPrice() {
