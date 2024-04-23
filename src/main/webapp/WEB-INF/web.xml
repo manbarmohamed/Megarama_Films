@@ -3,11 +3,11 @@
 		
 		
 		<servlet>
-			<servlet-name>Home</servlet-name>
-			<servlet-class>com.Cenima.Servlets.Home</servlet-class>
+			<servlet-name>ShowFilmsServlet</servlet-name>
+			<servlet-class>com.Cenima.Servlets.ShowFilmsServlet</servlet-class>
 		</servlet>
 		<servlet-mapping>
-			<servlet-name>Home</servlet-name>
+			<servlet-name>ShowFilmsServlet</servlet-name>
 			<url-pattern>/</url-pattern>
 		</servlet-mapping>
 		

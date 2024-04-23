@@ -95,6 +95,14 @@ public class Film {
 	public void setFilm_pic(String film_pic) {
 		this.film_pic = film_pic;
 	}
+	@Override
+	public String toString() {
+		return "Film [id_fiml=" + id_fiml + ", title=" + title + ", category=" + category + ", description="
+				+ description + ", show_time=" + show_time + ", price=" + price + ", film_duration=" + film_duration
+				+ ", film_pic=" + film_pic + ", ticket=" + ticket + "]";
+	}
+
+
 	public String getTicket() {
 		return ticket;
 	}
