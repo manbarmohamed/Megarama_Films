@@ -40,7 +40,23 @@ public class FilmsDAOImp implements FilmsDAO{
 
 	@Override
 	public List<Film> selectAllFilms() throws SQLException {
-		return null;
+		List<Film> allFilms= new ArrayList<>();
+		Connection connection =DataBaseManager.getConnection();
+		PreparedStatement statement = connection.prepareStatement(SELECT_ALL_FILM_SQL);
+		ResultSet rs= statement.executeQuery();
+		
+		while(rs.next()) {
+			String title = rs.getString("title");
+			String category = rs.getString("category");
+			String description = rs.getString("description");
+			String show_time = rs.getString("show_time");
+			String price = rs.getString("price");
+			String film_duration = rs.getString("film_duration");
+			String film_pic = rs.getString("film_pic");
+			String ticket_number = rs.getString("ticket_number");
+			allFilms.add(new Film(title,category,description,show_time,price,film_duration,film_pic,ticket_number));
+		}
+		return allFilms;
 	}
 
 	@Override
