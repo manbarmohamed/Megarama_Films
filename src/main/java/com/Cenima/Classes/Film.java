@@ -21,6 +21,20 @@ public class Film {
 	}
 	
 	
+	public Film(String title, String category, String description, Date show_time, String price, String film_duration,
+			String film_pic, String ticket) {
+		super();
+		this.title = title;
+		this.category = category;
+		this.description = description;
+		this.show_time = show_time;
+		this.price = price;
+		this.film_duration = film_duration;
+		this.film_pic = film_pic;
+		this.ticket = ticket;
+	}
+
+
 	///// variables ////
 	private Integer id_fiml;
 	private String title;
