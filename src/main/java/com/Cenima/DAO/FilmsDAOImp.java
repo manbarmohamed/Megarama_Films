@@ -27,7 +27,9 @@ public class FilmsDAOImp implements FilmsDAO{
 			+ "    ticket_number = ?\r\n"
 			+ "WHERE film_id = ?;\r\n"
 			+ "";
-	private String DELETE_FILM_SQL="";
+	private String DELETE_FILM_SQL="DELETE FROM films\r\n"
+			+ "WHERE film_id = ? ;\r\n"
+			+ "";
 	private String SELECT_ALL_FILM_SQL="select * from films";
 	private String SELECT_FILM_BY_ID_SQL="select * from films where film_id = ?";
 
@@ -96,13 +98,30 @@ public class FilmsDAOImp implements FilmsDAO{
 		boolean isUpdated;
 		Connection connection = DataBaseManager.getConnection();
 		PreparedStatement statement = connection.prepareStatement(UPDATE_FILM_SQL);
-		return false;
+		statement.setString(1, film.getTitle());
+		statement.setString(2,film.getCategory());
+		statement.setString(3, film.getDescription());
+		statement.setString(4, film.getShow_time());
+		statement.setString(5,film.getPrice());
+		statement.setString(6, film.getFilm_duration());
+		statement.setString(7, film.getFilm_pic());
+		statement.setString(8, film.getTicket());
+		statement.setInt(9, film.getId_fiml());
+		
+		isUpdated= statement.executeUpdate() > 0;
+		
+		return isUpdated;
 	}
 
 	@Override
-	public boolean deleteFilm(int idFilm) {
-		// TODO Auto-generated method stub
-		return false;
+	public boolean deleteFilm(int idFilm) throws SQLException {
+		boolean isDeleted;
+		Connection connection = DataBaseManager.getConnection();
+		PreparedStatement statement = connection.prepareStatement(DELETE_FILM_SQL);
+		statement.setInt(1, idFilm);
+		
+		isDeleted = statement.executeUpdate()>0;
+		return isDeleted;
 	}
 
 }
