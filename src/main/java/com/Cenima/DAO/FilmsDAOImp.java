@@ -15,7 +15,18 @@ public class FilmsDAOImp implements FilmsDAO{
 	private String INSERT_FILM_SQL="INSERT INTO films (title, category, description, show_time, price, film_duration, film_pic, ticket_number) \r\n"
 			+ "VALUES (?, ?, ?, ?, ?, ?, ?, ?);\r\n"
 			+ "";
-	private String UPDATE_FILM_SQL="";
+	private String UPDATE_FILM_SQL="UPDATE films\r\n"
+			+ "SET \r\n"
+			+ "    title = ?,\r\n"
+			+ "    category = ?,\r\n"
+			+ "    description = ?,\r\n"
+			+ "    show_time = ?,\r\n"
+			+ "    price = ?,\r\n"
+			+ "    film_duration = ?,\r\n"
+			+ "    film_pic = ?,\r\n"
+			+ "    ticket_number = ?\r\n"
+			+ "WHERE film_id = ?;\r\n"
+			+ "";
 	private String DELETE_FILM_SQL="";
 	private String SELECT_ALL_FILM_SQL="select * from films";
 	private String SELECT_FILM_BY_ID_SQL="select * from films where film_id = ?";
@@ -81,8 +92,10 @@ public class FilmsDAOImp implements FilmsDAO{
 	}
 
 	@Override
-	public boolean updateFilm(Film film) {
-		// TODO Auto-generated method stub
+	public boolean updateFilm(Film film) throws SQLException {
+		boolean isUpdated;
+		Connection connection = DataBaseManager.getConnection();
+		PreparedStatement statement = connection.prepareStatement(UPDATE_FILM_SQL);
 		return false;
 	}
 
