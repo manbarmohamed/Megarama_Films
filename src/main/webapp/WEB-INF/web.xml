@@ -11,6 +11,7 @@
 			<url-pattern>/</url-pattern>
 		</servlet-mapping>
 
+
 	<servlet>
 		<servlet-name>InsertFilmServlet</servlet-name>
 		<servlet-class>com.Cenima.Servlets.InsertFilmServlet</servlet-class>
@@ -19,5 +20,24 @@
 		<servlet-name>InsertFilmServlet</servlet-name>
 		<url-pattern>/add</url-pattern>
 	</servlet-mapping>
+
+		
+		<servlet>
+			<servlet-name>Reservation_film</servlet-name>
+			<servlet-class>com.Cenima.Servlets.Reservation_film</servlet-class>
+		</servlet>
+		<servlet-mapping>
+			<servlet-name>Reservation_film</servlet-name>
+			<url-pattern>/reservation</url-pattern>
+		</servlet-mapping>
+		
+		<!--  -->
+   		<jsp-config>
+        	<jsp-property-group>
+            	<url-pattern>*.jsp</url-pattern>
+           		<include-prelude>/WEB-INF/taglibs.jsp</include-prelude>
+        	</jsp-property-group>
+    	</jsp-config>
+
 		
 </web-app>
