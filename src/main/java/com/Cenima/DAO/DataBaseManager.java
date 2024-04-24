@@ -10,7 +10,7 @@ public class DataBaseManager {
 	    public static String jdbcUserName = "root";
 	    public static String jdbcPassword = "";
 	    public static String jdbcDriver = "com.mysql.cj.jdbc.Driver";
-
+ 
 	    
 	    protected static Connection getConnection() {
 	        Connection connection = null;
@@ -25,5 +25,6 @@ public class DataBaseManager {
 	        }
 	        return connection;
 	    }
+	   
 
 }

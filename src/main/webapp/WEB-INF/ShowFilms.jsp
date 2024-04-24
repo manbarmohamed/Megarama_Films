@@ -10,9 +10,12 @@
 <body>
 
 <h1>Films Available</h1>
-	<c:forEach var="film" items="${listFilms}">
+
+<c:forEach var="film" items="${listFilms}">
+		<div class="container">
+
 		<div class="movie">
-	
+
             <div class="movie-img movie-img1"><img class="movie-img movie-img1" src="${film.getFilm_pic()}"></div>
             <div class="movie-info">
                 <p class="title">${film.getTitle()}</p>
@@ -29,7 +32,7 @@
                     ${film.getDescription()}.
                 </p>
                 <div class="actions">
-                    <button><i class="fa fa-play"></i>reserve</button>
+                    <a href="add"><i class="fa fa-play"></i>reserve</a>
     
                     <div class="actions-more">
                         <i class="fa-solid fa-share-nodes"></i>
@@ -39,7 +42,10 @@
                 </div>
             </div>
             </c:forEach>
-        </div>
+		</div>
+		</div>
+
+
 
 </body>
 </html>
