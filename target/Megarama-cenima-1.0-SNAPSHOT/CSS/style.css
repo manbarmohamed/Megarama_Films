@@ -59,6 +59,7 @@
 .movie-info .title {
     font-size: 32px;
     color: #fff;
+    overflow: hidden;
 }
 
 .movie-info .genres {
@@ -117,7 +118,6 @@
     font-size: 22px;
     margin-left: 5px;
 }
-
-.movie:hover{
+/*.movie:hover{
     transform: scale(1.2);
-}
+}*/

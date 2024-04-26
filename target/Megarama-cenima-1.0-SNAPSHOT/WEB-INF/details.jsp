@@ -1,6 +1,6 @@
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,18 +23,18 @@
         <li><a href="#">ABOUT</a></li>
         <li><a href="#">CONTACT</a></li>
     </ul>
-    
+
 </header>
 
 <section class="details">
     <div class="wrapper">
         <div class="img-film">
-            <img src="https://i.ibb.co/S61nqsj/55.jpg" width="90%">
+            <img src="${img}" width="90%">
         </div>
         <div class="content-film">
             <div class="titles">
                 <h2>New Episodes</h2>
-                <h1>Harry Potter</h1>
+                <h1>${title}</h1>
             </div>
             <br>
             <div class="titles-content">
@@ -47,17 +47,17 @@
                 </div>
 
                 <div class="proprty">
-                    <h3>Comedy, Action, Adventure, Science Fiction</h3>
+                    <h3>${cat}</h3>
                 </div>
 
                 <div class="delay">
-                    <h3>2024-9-23</h3>
-                    <h3>146 min</h3>
+                    <h3>${date}</h3>
+                    <h3>${duration} min</h3>
                 </div>
             </div>
             <br>
             <div class="desc">
-                <p>A bank teller called Guy realizes he is a background character in an open world video game called Free City that will soon go offline.</p>
+                <p>${desc}</p>
             </div>
             <div class="film-res">
                 <h2>Share</h2>

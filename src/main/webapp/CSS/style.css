@@ -59,6 +59,7 @@
 .movie-info .title {
     font-size: 32px;
     color: #fff;
+    overflow: hidden;
 }
 
 .movie-info .genres {
