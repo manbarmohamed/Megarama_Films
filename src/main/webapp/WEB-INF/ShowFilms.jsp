@@ -6,15 +6,19 @@
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 <style><%@ include file="/CSS/style.css"%></style>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
 </head>
 <body>
 
-<h1>Films Available</h1>
-
+<h1 >Films Available</h1>
+<div class="container row">
 <c:forEach var="film" items="${listFilms}">
-		<div class="container">
 
-		<div class="movie">
+
+		<div class="movie ">
 
             <div class="movie-img movie-img1"><img class="movie-img movie-img1" src="${film.getFilm_pic()}"></div>
             <div class="movie-info">
@@ -41,11 +45,11 @@
                     </div>
                 </div>
             </div>
-            </c:forEach>
+
 		</div>
-		</div>
 
 
-
+</c:forEach>
+</div>
 </body>
 </html>
