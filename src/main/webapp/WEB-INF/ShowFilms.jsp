@@ -13,6 +13,7 @@
 
 <body>
 
+<<<<<<< HEAD
 <header>
     <div class="logo"><img src="https://i.ibb.co/4pCSmsM/LOGO.png" width="100%"></div>
 
@@ -41,6 +42,45 @@
                     <button>See more</button>
                 </div>
             </div>
+=======
+<h1>Films Available</h1>
+
+<c:forEach var="film" items="${listFilms}">
+		<div class="container">
+
+		<div class="movie">
+
+            <div class="movie-img movie-img1"><img class="movie-img movie-img1" src="${film.getFilm_pic()}"></div>
+            <div class="movie-info">
+                <p class="title">${film.getTitle()}</p>
+                <p class="genres">${film.getCategory()}</p>
+                <div class="movie-text">
+                    <p>Summary</p>
+                    <div class="movie-link">
+                        <span><i class="fa-solid fa-thumbs-up"></i>269</span>
+                        <span><i class="fa-solid fa-comment"></i>19</span>
+                    </div>
+                </div>
+    
+                <p class="text">
+                    ${film.getDescription()}.
+                </p>
+                <div class="actions">
+                    <a href="add"><i class="fa fa-play"></i>reserve</a>
+    
+                    <div class="actions-more">
+                        <i class="fa-solid fa-share-nodes"></i>
+                        <i class="fa-solid fa-bookmark"></i>
+                        <i class="fa-regular fa-floppy-disk"></i>
+                    </div>
+                </div>
+            </div>
+            </c:forEach>
+		</div>
+		</div>
+
+
+>>>>>>> 3bad25b2902700ceee5bdc43e964e99fa8596e4b
 
             <div class="item" style="background-image: url('https://i.ibb.co/LkTJgnk/33.jpg');">
                 <div class="content">
