@@ -13,7 +13,6 @@
 
 <body>
 
-<<<<<<< HEAD
 <header>
     <div class="logo"><img src="https://i.ibb.co/4pCSmsM/LOGO.png" width="100%"></div>
 
