@@ -1,12 +1,12 @@
 package com.Cenima.Servlets;
-
 import com.Cenima.Classes.Film;
 import com.Cenima.DAO.FilmsDAO;
 import com.Cenima.DAO.FilmsDAOImp;
-
-import javax.servlet.*;
-import javax.servlet.http.*;
-import javax.servlet.annotation.*;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
 
