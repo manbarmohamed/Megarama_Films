@@ -32,16 +32,6 @@
 		</servlet-mapping>
 		
 		<!--  -->
-	<servlet>
-		<servlet-name>Details</servlet-name>
-		<servlet-class>com.Cenima.Servlets.Details</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>Details</servlet-name>
-		<url-pattern>/details</url-pattern>
-	</servlet-mapping>
-
-	<!--  -->
    		<jsp-config>
         	<jsp-property-group>
             	<url-pattern>*.jsp</url-pattern>
