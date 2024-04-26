@@ -9,6 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="fb8b05e6-95c8-4d63-a8e4-cc7ef75c0936" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/artifacts/Megarama_cenima_war_exploded.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
@@ -157,11 +158,26 @@
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/reservation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/reservation.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
+=======
+    <list default="true" id="324b734a-b35d-42ff-9860-8a25e162b0f4" name="Changes" comment="" />
+>>>>>>> cbac0ff54b5f5ef263a584abf98617158d18feb3
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
+=======
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jsp File" />
+        <option value="Class" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+>>>>>>> cbac0ff54b5f5ef263a584abf98617158d18feb3
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -173,9 +189,15 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectColorInfo">{
+<<<<<<< HEAD
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2fadgymeWyDVEvcTT72x5SJQgt1" />
+=======
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2fYNmNZi6FdTTm8dQA0aRQGxmb2" />
+>>>>>>> cbac0ff54b5f5ef263a584abf98617158d18feb3
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -185,10 +207,17 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Tomcat Server.Tomcat 8.5.100.executor": "Run",
+<<<<<<< HEAD
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/user/eclipse-workspace/Megarama-cenima/src/main/webapp",
+=======
+    "Tomcat Server.Unnamed.executor": "Run",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/user/Desktop/Megarama-cenima",
+    "list.type.of.created.stylesheet": "CSS",
+>>>>>>> cbac0ff54b5f5ef263a584abf98617158d18feb3
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -197,6 +226,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
+<<<<<<< HEAD
     "settings.editor.selected.configurable": "configurable.group.language",
     "vue.rearranger.settings.migration": "true"
   },
@@ -221,6 +251,14 @@
   <component name="RunManager">
     <configuration name="Tomcat 8.5.100" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.100" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/Megarama_cenima_war_exploded/login" />
+=======
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Tomcat 8.5.100" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.100" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+>>>>>>> cbac0ff54b5f5ef263a584abf98617158d18feb3
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="Megarama-cenima:war exploded">
@@ -230,7 +268,12 @@
         </artifact>
       </deployment>
       <server-settings>
+<<<<<<< HEAD
         <option name="BASE_DIRECTORY_NAME" value="64449a75-e5e7-4295-9b34-6a5e619e8ae0" />
+=======
+        <option name="BASE_DIRECTORY_NAME" value="329efd14-1429-4353-9b0b-d24f876d2e58" />
+        <option name="HTTP_PORT" value="8088" />
+>>>>>>> cbac0ff54b5f5ef263a584abf98617158d18feb3
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -238,7 +281,11 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
+<<<<<<< HEAD
         <option name="DEBUG_PORT" value="52871" />
+=======
+        <option name="DEBUG_PORT" value="61815" />
+>>>>>>> cbac0ff54b5f5ef263a584abf98617158d18feb3
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -319,6 +366,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
       <changelist id="fb8b05e6-95c8-4d63-a8e4-cc7ef75c0936" name="Changes" comment="" />
       <created>1714043258828</created>
       <option name="number" value="Default" />
@@ -330,12 +378,22 @@
       <workItem from="1714061757676" duration="1054000" />
       <workItem from="1714119032726" duration="4961000" />
       <workItem from="1714126193478" duration="9477000" />
+=======
+      <changelist id="324b734a-b35d-42ff-9860-8a25e162b0f4" name="Changes" comment="" />
+      <created>1713974212870</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1713974212870</updated>
+      <workItem from="1713974213613" duration="1108000" />
+      <workItem from="1713975347349" duration="17712000" />
+>>>>>>> cbac0ff54b5f5ef263a584abf98617158d18feb3
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+<<<<<<< HEAD
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -347,4 +405,6 @@
       </breakpoints>
     </breakpoint-manager>
   </component>
+=======
+>>>>>>> cbac0ff54b5f5ef263a584abf98617158d18feb3
 </project>
