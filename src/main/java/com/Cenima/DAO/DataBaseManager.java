@@ -8,11 +8,11 @@ public class DataBaseManager {
 	
 	 	public static String jdbcURL = "jdbc:mysql://localhost:3306/megarama";
 	    public static String jdbcUserName = "root";
-	    public static String jdbcPassword = "";
+	    public static String jdbcPassword = "jujuRO55";
 	    public static String jdbcDriver = "com.mysql.cj.jdbc.Driver";
  
 	    
-	    protected static Connection getConnection() {
+	    public static Connection getConnection() {
 	        Connection connection = null;
 	        try {
 	            Class.forName(jdbcDriver);

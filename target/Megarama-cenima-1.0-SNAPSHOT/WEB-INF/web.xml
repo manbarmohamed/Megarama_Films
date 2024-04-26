@@ -19,7 +19,6 @@
 		<servlet-name>InsertFilmServlet</servlet-name>
 		<url-pattern>/add</url-pattern>
 	</servlet-mapping>
-
 		
 		<servlet>
 			<servlet-name>Reservation_film</servlet-name>
@@ -47,6 +46,7 @@
            		<include-prelude>/WEB-INF/taglibs.jsp</include-prelude>
         	</jsp-property-group>
     	</jsp-config>
+
 
 		
 </web-app>

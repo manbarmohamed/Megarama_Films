@@ -25,7 +25,22 @@ public class Details extends HttpServlet {
 
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        this.getServletContext().getRequestDispatcher("/WEB-INF/details.jsp").forward(request , response);
+
+        String desc = request.getParameter("desc");
+        String date = request.getParameter("date");
+        String duration = request.getParameter("duration");
+        String cat = request.getParameter("cat");
+        String img = request.getParameter("img");
+        String title = request.getParameter("title");
+
+
+        request.setAttribute("desc", desc);
+        request.setAttribute("date", date);
+        request.setAttribute("duration", duration);
+        request.setAttribute("cat", cat);
+        request.setAttribute("img", img);
+        request.setAttribute("title", title);
+        this.getServletContext().getRequestDispatcher("/WEB-INF/details.jsp").forward(request, response);
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

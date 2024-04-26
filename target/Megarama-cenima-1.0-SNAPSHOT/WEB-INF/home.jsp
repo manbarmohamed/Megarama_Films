@@ -1,4 +1,4 @@
-<!--<c:forEach var="film" items="${listFilms}">
+<c:forEach var="film" items="${listFilms}">
     <div class="movie">
 
     <div class="movie-img movie-img1"><img class="movie-img movie-img1" src="${film.getFilm_pic()}"></div>
@@ -26,4 +26,4 @@
     </div>
     </div>
     </div>
-</c:forEach>-->
+</c:forEach>

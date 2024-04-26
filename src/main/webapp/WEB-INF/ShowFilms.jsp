@@ -1,4 +1,6 @@
+
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,6 +15,15 @@
 
 <body>
 
+<<<<<<< HEAD
+<h1>Films Available</h1>
+<a
+        class="nav-link py-3 px-0 px-lg-3 rounded" href="logout">Logout</a></li>
+<li class="nav-item mx-0 mx-lg-1 bg-danger"><a
+        class="nav-link py-3 px-0 px-lg-3 rounded" href="logout"><%=session.getAttribute("name") %></a></li>
+<c:forEach var="film" items="${listFilms}">
+		<div class="container">
+=======
 <header>
     <div class="logo"><img src="https://i.ibb.co/4pCSmsM/LOGO.png" width="100%"></div>
 
@@ -22,6 +33,7 @@
         <li><a href="#">ABOUT</a></li>
         <li><a href="#">CONTACT</a></li>
     </ul>
+>>>>>>> cbac0ff54b5f5ef263a584abf98617158d18feb3
 
     <div class="buttons1">
         <button id="singin">Sing in</button>
@@ -109,25 +121,27 @@
 </div>
 
 <div class="S-main">
+    <c:forEach var="film" items="${listFilms}">
     <div class="S-main-hero">
         <div class="card-film">
-            <img src="https://i.ibb.co/9hgX9dL/44.jpg" width="100%">
+            <img  class="cover-img" src="${film.getFilm_pic()}" width="100%">
 
             <div class="film-content">
-                <h2>harru potter</h2>
-                <h3>2024-04-25</h3>
+                <h2>${film.getTitle()}</h2>
+                <h3>${film.getShow_time()}</h3>
+
             </div>
             <div class="film-content2">
                 <div>
                     <h2>8K+</h2>
-                    <button id="book">Book</button>
+                    <a href="details?id=${film.getId_fiml()}?img=${film.getFilm_pic()}?title=${film.getTitle()}?desc=${film.getDescription()}?duration=${film.getFilm_duration()}?cat=${film.getCategory()}?date=${film.getShow_time()}" id="book">Book</a>
                 </div>
-                <h3>180 min</h3>
+                <h3> ${film.getFilm_duration()} min</h3>
             </div>
 
         </div>
     </div>
-
+    </c:forEach>
 </div>
 
 

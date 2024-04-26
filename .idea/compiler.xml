@@ -9,5 +9,8 @@
         <module name="Megarama-cenima" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Megarama-cenima" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
