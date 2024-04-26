@@ -23,7 +23,7 @@
         <li><a href="#">ABOUT</a></li>
         <li><a href="#">CONTACT</a></li>
     </ul>
-    
+
 </header>
 
 <section class="details">
@@ -62,7 +62,10 @@
             <div class="film-res">
                 <h2>Share</h2>
                 <h3>Prime Film</h3>
-                <button class="reservation"><a href="#">Reservation</a></button>
+                <form action="Reservation_film" method="POST">
+
+                    <button class="reservation"><a href="#">Reservation</a></button>
+                </form>
             </div>
 
         </div>

@@ -11,7 +11,6 @@
 			<url-pattern>/</url-pattern>
 		</servlet-mapping>
 
-
 	<servlet>
 		<servlet-name>InsertFilmServlet</servlet-name>
 		<servlet-class>com.Cenima.Servlets.InsertFilmServlet</servlet-class>

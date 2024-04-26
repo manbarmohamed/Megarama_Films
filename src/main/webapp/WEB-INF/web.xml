@@ -19,7 +19,6 @@
 		<servlet-name>InsertFilmServlet</servlet-name>
 		<url-pattern>/add</url-pattern>
 	</servlet-mapping>
-<<<<<<< HEAD
 
 		
 		<servlet>
@@ -49,7 +48,5 @@
         	</jsp-property-group>
     	</jsp-config>
 
-=======
->>>>>>> 3bad25b2902700ceee5bdc43e964e99fa8596e4b
 		
 </web-app>
