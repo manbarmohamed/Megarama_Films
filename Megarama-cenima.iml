@@ -4,7 +4,7 @@
     <libelement value="jar://C:/Program Files/Apache Software Foundation/Tomcat 8.5/lib/jsp-api.jar!/" />
     <libelement value="jar://C:/Program Files/Apache Software Foundation/Tomcat 8.5/lib/servlet-api.jar!/" />
     <libelement value="jar://$USER_HOME$/Downloads/jstl-1.2.jar!/" />
-    <libelement value="jar://$USER_HOME$/Downloads/mysql-connector-j-8.3.0/mysql-connector-j-8.3.0/mysql-connector-j-8.3.0.jar!/" />
+    <libelement value="file://$USER_HOME$/Downloads/mysql-connector-j-8.3.0/mysql-connector-j-8.3.0/mysql-connector-j-8.3.0.jar" />
     <conelement value="org.eclipse.jst.j2ee.internal.web.container" />
     <conelement value="org.eclipse.jst.j2ee.internal.module.container" />
     <conelement value="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v8.5" />
@@ -32,9 +32,9 @@
     </content>
     <orderEntry type="jdk" jdkName="21" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="org.eclipse.jst.j2ee.internal.web.container" level="application" />
-    <orderEntry type="library" exported="" name="org.eclipse.jst.j2ee.internal.module.container" level="application" />
-    <orderEntry type="library" exported="" name="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v8.5" level="application" />
+    <orderEntry type="library" name="org.eclipse.jst.j2ee.internal.web.container" level="application" />
+    <orderEntry type="library" name="org.eclipse.jst.j2ee.internal.module.container" level="application" />
+    <orderEntry type="library" name="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v8.5" level="application" />
     <orderEntry type="module-library">
       <library name="jsp-api.jar">
         <CLASSES>
@@ -65,12 +65,11 @@
     <orderEntry type="module-library">
       <library name="mysql-connector-j-8.3.0.jar">
         <CLASSES>
-          <root url="jar://$USER_HOME$/Downloads/mysql-connector-j-8.3.0/mysql-connector-j-8.3.0/mysql-connector-j-8.3.0.jar!/" />
+          <root url="file://$USER_HOME$/Downloads/mysql-connector-j-8.3.0/mysql-connector-j-8.3.0/mysql-connector-j-8.3.0.jar" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="mysql-connector-j-8.3.0" level="project" />
   </component>
 </module>
