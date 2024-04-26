@@ -21,7 +21,7 @@ public class ShowFilmsServlet extends HttpServlet {
 		FilmsDAOImp films = new FilmsDAOImp();
 		try {
 			request.setAttribute("listFilms", films.selectAllFilms());
-		System.out.println(films.selectAllFilms());
+			System.out.println(films.selectAllFilms());
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

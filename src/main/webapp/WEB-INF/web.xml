@@ -47,7 +47,6 @@
 	</servlet-mapping>
 	
 
-		
 		<servlet>
 			<servlet-name>Reservation_film</servlet-name>
 			<servlet-class>com.Cenima.Servlets.Reservation_film</servlet-class>
@@ -74,7 +73,6 @@
            		<include-prelude>/WEB-INF/taglibs.jsp</include-prelude>
         	</jsp-property-group>
     	</jsp-config>
-
 
 		
 </web-app>
