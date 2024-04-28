@@ -30,14 +30,12 @@
 <section class="details">
     <div class="wrapper">
         <div class="img-film">
-
             <img src="${fl.getFilm_pic()}" width="90%">
         </div>
         <div class="content-film">
             <div class="titles">
                 <h2>New Episodes</h2>
                 <h1>${fl.getTitle()}</h1>
-
             </div>
             <br>
             <div class="titles-content">
@@ -57,18 +55,20 @@
                     <h3>${fl.getShow_time()}</h3>
                     <h3>${fl.getFilm_duration()} min</h3>
                 </div>
-
-
             </div>
             <br>
             <div class="desc">
                 <p>${fl.getDescription()}</p>
             </div>
             <div class="film-res">
-                <h2>Share</h2>
-                <h3>Ticket : <input type="number" name="ticket" /></h3>
-                <button class="reservation"><a href="#">Reservation</a></button>
+                <form action="Reservation_film" method="GET">
+                        <input type="number" name="ticket" placeholder="tickets"/>
+                        <input type="date" name="date" value="${fl.getShow_time()}" style="display: none"/>
+                        <input type="number" name="id_film" value="${fl.getId_fiml()}" style="display: none"/>
+                        <button class="reservation" type="submit">Reservation</button>
+                </form>
             </div>
+
         </div>
 
     </div>

@@ -1,6 +1,7 @@
 package com.Cenima.Servlets;
 
 import java.io.IOException;
+import java.sql.Date;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
@@ -26,22 +27,24 @@ public class Reservation_film extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		ReservationDAOImp res = new ReservationDAOImp();
-		List<Reservation> ArrayRes = new ArrayList<>();
-		try {
-			ArrayRes = res.historicalReservation();
-			System.out.println("///////////////////");
-			request.setAttribute("res", ArrayRes);
-			System.out.println(res.historicalReservation());
-			} catch (SQLException e) {
-			e.printStackTrace();
-		}
-		this.getServletContext().getRequestDispatcher("/WEB-INF/reservation.jsp").forward(request, response);
+		String idF = request.getParameter("id_film");
+		Integer id_user = 2;
+		String date = request.getParameter("date");
+		String number_ticket = request.getParameter("ticket");
 
-	}
+		Integer idFilm = Integer.valueOf(idF);
+		Date dateFilm = Date.valueOf(date);
+
+        try {
+            res.saveReservation(new Reservation(id_user , idFilm , dateFilm , number_ticket));
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+		this.getServletContext().getRequestDispatcher("/WEB-INF/ShowFilms.jsp").forward(request , response);
+    }
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		this.getServletContext().getRequestDispatcher("/WEB-INF/reservation.jsp").forward(request, response);
-		System.out.println("sssssssssssssssssssss");
+
 
 	}
 

@@ -188,7 +188,7 @@ header > ul > li >a:hover,#a1{
 }
 .film-res {
     margin-top: 20px;
-    width: 70%;
+    width: 50%;
     height: 30%;
     display: flex;
     background:#061F2E;
@@ -197,18 +197,25 @@ header > ul > li >a:hover,#a1{
     align-items: center;
     justify-content: space-around;
 }
-.film-res > h2 , h3 {
-    color: white;
-    font-size: 17px;
-    font-weight: 800;
+.film-res > form {
     display: flex;
+    width: 100%;
     align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    padding: 20px;
 }
-.film-res > h3 > input{
-    width: 40px;
+.film-res > form > input{
+    width: 30%;
     padding: 8px;
     border-radius: 8px;
     margin: 1px 3px;
+    border: 2px solid #6c757d;
+    border-radius: 7px;
+    outline: none;
+    color: yellow;
+    background: transparent;
+    margin: 0 5px;
 }
 .reservation{
     background: transparent;
