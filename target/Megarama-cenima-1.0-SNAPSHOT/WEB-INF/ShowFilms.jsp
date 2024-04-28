@@ -102,9 +102,11 @@
 
     </div>
     <div class="D1-buttons">
-        <button>MOVIES</button>
-        <button>TV SHOWS</button>
-        <button>ANIME</button>
+        <form action="Search" method="GET">
+            <input type="text" name="search" id="search" placeholder="Search by title"/>
+            <button id="btn-search" type="submit">Search</button>
+        </form>
+
     </div>
 
 </div>
@@ -118,19 +120,38 @@
             <div class="film-content ">
                 <h2>${film.getTitle()}</h2>
                 <h3>${film.getShow_time()}</h3>
-
             </div>
             <div class="film-content2">
                 <div>
                     <h2>8K+</h2>
                     <a href="details?id=${film.getId_fiml()}" id="book">Book</a>
-
                 </div>
                 <h3> ${film.getFilm_duration()} min</h3>
             </div>
 
         </div>
     </div>
+    </c:forEach>
+
+    <c:forEach var="film" items="${filmSearch}">
+        <div class="S-main-hero">
+            <div class="card-film">
+                <img  class="cover-img" src="${film.getFilm_pic()}" width="100%">
+
+                <div class="film-content ">
+                    <h2>${film.getTitle()}</h2>
+                    <h3>${film.getShow_time()}</h3>
+                </div>
+                <div class="film-content2">
+                    <div>
+                        <h2>8K+</h2>
+                        <a href="details?id=${film.getId_fiml()}" id="book">Book</a>
+                    </div>
+                    <h3> ${film.getFilm_duration()} min</h3>
+                </div>
+
+            </div>
+        </div>
     </c:forEach>
 </div>
 
