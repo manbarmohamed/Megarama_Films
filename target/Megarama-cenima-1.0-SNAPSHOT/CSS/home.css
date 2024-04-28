@@ -273,15 +273,32 @@ i{
 .D1-buttons{
     padding: 10px 20px ;
 }
-.D1-buttons > button {
+.D1-buttons > form > input {
     padding: 10px 20px ;
-    border-radius: 25px;
-    border: 2px solid #3e464d;
-    background: #272e35;
+    border: 1px solid yellow;
+    border-radius: 5px;
     color: white;
-    font-weight: 300;
-    margin: 0 3px;
+    background: #1c2a32;
+    border: 2px solid #6c757d;
+    outline: none;
+}
+.D1-buttons > form > input::placeholder{
+    color: #bababa;
+    font-weight: 700;
+}
+.D1-buttons > form > button {
+    padding: 10px 15px;
+    background: #1c2a32;
+    border: 2px solid #6c757d;
+    border-radius: 5px;
+    color: yellow;
     cursor: pointer;
+    transition: .4s;
+}
+.D1-buttons > form > button:hover{
+    background: #1c2a32;
+    border: 2px solid yellow;
+    color: white;
 }
 .S-main-hero{
     display: flex;
