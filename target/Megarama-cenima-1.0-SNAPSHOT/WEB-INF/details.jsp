@@ -65,7 +65,7 @@
                         <input type="number" name="ticket" placeholder="tickets"/>
                         <input type="date" name="date" value="${fl.getShow_time()}" style="display: none"/>
                         <input type="number" name="id_film" value="${fl.getId_fiml()}" style="display: none"/>
-                        <button class="reservation"><a href="#">Reservation</a></button>
+                        <button class="reservation" type="submit">Reservation</button>
                 </form>
             </div>
 

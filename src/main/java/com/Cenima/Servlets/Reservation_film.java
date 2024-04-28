@@ -27,12 +27,12 @@ public class Reservation_film extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		ReservationDAOImp res = new ReservationDAOImp();
-		String id_fiml = request.getParameter("id_film");
-		Integer id_user = 1;
+		String idF = request.getParameter("id_film");
+		Integer id_user = 2;
 		String date = request.getParameter("date");
 		String number_ticket = request.getParameter("ticket");
 
-		Integer idFilm = Integer.valueOf(id_fiml);
+		Integer idFilm = Integer.valueOf(idF);
 		Date dateFilm = Date.valueOf(date);
 
         try {
