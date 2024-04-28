@@ -11,6 +11,13 @@ public class Reservation {
 		this.reservation_date = reservation_date;
 		this.ticket = ticket;
 	}
+	public Reservation(Integer film_id, Integer user_id, Date reservation_date, String ticket) {
+		super();
+		this.film_id = film_id;
+		this.user_id = user_id;
+		this.reservation_date = reservation_date;
+		this.ticket = ticket;
+	}
 	public Reservation() {
 		super();
 	}
