@@ -11,7 +11,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.Cenima.Classes.Film;
 import com.Cenima.Classes.Reservation;
+import com.Cenima.DAO.FilmsDAOImp;
 import com.Cenima.DAO.ReservationDAOImp;
 
 @WebServlet("/Details")
@@ -25,12 +27,23 @@ public class Details extends HttpServlet {
 
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        this.getServletContext().getRequestDispatcher("/WEB-INF/details.jsp").forward(request , response);
+        FilmsDAOImp flm = new FilmsDAOImp();
+        int idFilm = Integer.valueOf(request.getParameter("id"));
+        List<Film> list_Film = null;
+        try {
+            list_Film = flm.selectFilmById(idFilm);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        request.setAttribute("list_film", list_Film);
+
+
+        request.getRequestDispatcher("/WEB-INF/details.jsp").forward(request, response);
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // TODO Auto-generated method stub
-        doGet(request, response);
+        request.getRequestDispatcher("/WEB-INF/details.jsp").forward(request, response);
+
     }
 
 }

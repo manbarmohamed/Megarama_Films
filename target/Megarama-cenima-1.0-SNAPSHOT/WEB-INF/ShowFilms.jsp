@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,6 +42,7 @@
                     <button>See more</button>
                 </div>
             </div>
+
 
             <div class="item" style="background-image: url('https://i.ibb.co/LkTJgnk/33.jpg');">
                 <div class="content">
@@ -108,25 +110,27 @@
 </div>
 
 <div class="S-main">
+    <c:forEach var="film" items="${listFilms}">
     <div class="S-main-hero">
         <div class="card-film">
-            <img src="https://i.ibb.co/9hgX9dL/44.jpg" width="100%">
+            <img  class="cover-img" src="${film.getFilm_pic()}" width="100%">
 
-            <div class="film-content">
-                <h2>harru potter</h2>
-                <h3>2024-04-25</h3>
+            <div class="film-content ">
+                <h2>${film.getTitle()}</h2>
+                <h3>${film.getShow_time()}</h3>
+
             </div>
             <div class="film-content2">
                 <div>
                     <h2>8K+</h2>
-                    <button id="book">Book</button>
+                    <a href="details?id=${film.getId_fiml()}" id="book">Book</a>
                 </div>
-                <h3>180 min</h3>
+                <h3> ${film.getFilm_duration()} min</h3>
             </div>
 
         </div>
     </div>
-
+    </c:forEach>
 </div>
 
 

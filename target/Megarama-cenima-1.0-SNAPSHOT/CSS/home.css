@@ -286,6 +286,9 @@ i{
 .S-main-hero{
     display: flex;
 }
+.cover-img{
+    height: 400px;
+}
 .card-film{
     width: 300px;
     padding: 15px;
@@ -300,7 +303,7 @@ i{
 }
 .film-content > h3 {
     color: yellow;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 300;
 }
 .film-content > h2 {
@@ -311,7 +314,7 @@ i{
     overflow: auto;
     overflow-x: hidden;
     overflow-Y: hidden;
-    width: 140px;
+    width: 160px;
     height: 30px;
 }
 .film-content2 > div {
