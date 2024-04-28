@@ -14,7 +14,7 @@ public class FilmsDAOImp implements FilmsDAO{
 
 
 	private String INSERT_FILM_SQL="INSERT INTO films (title, category, description, show_time, price, film_duration, film_pic, ticket_number) VALUES (?, ?, ?, ?, ?, ?, ?, ?);";
-	private String UPDATE_FILM_SQL="UPDATE films SET title = ?,category = ?,descriptionn = ?,show_time = ?,price = ?,film_duration = ?,film_pic = ?,ticket_number = ? WHERE film_id = ?;";
+	private String UPDATE_FILM_SQL="UPDATE films SET title = ?,category = ?,description = ?,show_time = ?,price = ?,film_duration = ?,film_pic = ?,ticket_number = ? WHERE film_id = ?;";
 	private String DELETE_FILM_SQL="DELETE FROM films WHERE film_id = ? ;";
 	private String SELECT_ALL_FILM_SQL="select * from films";
 	private String SELECT_FILM_BY_ID_SQL="select * from films where film_id = ?";
@@ -46,7 +46,7 @@ public class FilmsDAOImp implements FilmsDAO{
 			Integer film_Id = rs.getInt("film_id");
 			String title = rs.getString("title");
 			String category = rs.getString("category");
-			String description = rs.getString("descriptionn");
+			String description = rs.getString("description");
 			String show_time = rs.getString("show_time");
 			String price = rs.getString("price");
 			String film_duration = rs.getString("film_duration");
@@ -69,7 +69,7 @@ public class FilmsDAOImp implements FilmsDAO{
 			Integer film_Id = rs.getInt("film_id");
 			String title = rs.getString("title");
 			String category = rs.getString("category");
-			String description = rs.getString("descriptionn");
+			String description = rs.getString("description");
 			String show_time = rs.getString("show_time");
 			String price = rs.getString("price");
 			String film_duration = rs.getString("film_duration");

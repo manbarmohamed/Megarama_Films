@@ -36,7 +36,7 @@
 
 		<div class="formAll">
 			<h1>Login</h1>
-			<form action="POST" method="Login">
+			<form action="log" method="Post">
 				<label for="username">Username</label><br>
 				<input type="text" name="username" id="username" placeholder="Username or email !">
 				<br>

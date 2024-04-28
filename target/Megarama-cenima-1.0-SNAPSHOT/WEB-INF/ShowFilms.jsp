@@ -25,8 +25,8 @@
     </ul>
 
     <div class="buttons1">
-        <button id="singin">Sing in</button>
-        <button id="singup">Sing up</button>
+        <a style="text-decoration: none" id="singin" href="${pageContext.request.contextPath}/log">Sing in</a>
+        <a style="text-decoration: none" id="singup" href="Megarama_cenima/">Sing up</a>
     </div>
 </header>
 

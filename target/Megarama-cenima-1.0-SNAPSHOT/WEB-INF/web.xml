@@ -41,12 +41,12 @@
 	</servlet-mapping>
 	<!--  -->
 	<servlet>
-		<servlet-name>Login</servlet-name>
-		<servlet-class>com.Cenima.registration.Login</servlet-class>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.Cenima.Servlets.LoginServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>Login</servlet-name>
-		<url-pattern>/Login</url-pattern>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/log</url-pattern>
 	</servlet-mapping>
 
 
