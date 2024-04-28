@@ -1,5 +1,5 @@
+
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        <%@include file="/CSS/home.css"%>
+        <%@include file="../CSS/home.css"%>
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
@@ -124,6 +124,7 @@
                 <div>
                     <h2>8K+</h2>
                     <a href="details?id=${film.getId_fiml()}" id="book">Book</a>
+
                 </div>
                 <h3> ${film.getFilm_duration()} min</h3>
             </div>

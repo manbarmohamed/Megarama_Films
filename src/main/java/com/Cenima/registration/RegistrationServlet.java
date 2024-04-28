@@ -56,9 +56,7 @@ public class RegistrationServlet extends HttpServlet {
 				e.printStackTrace();
 			}
 		}
-	
-		
-		
+
 	}
 
 }

@@ -1,21 +1,16 @@
 package com.Cenima.registration;
 
 import com.Cenima.Classes.User;
-import com.Cenima.DAO.UserDAO;
 import com.Cenima.DAO.UserDAOImp;
 
-import java.awt.*;
-import java.io.IOException;
-import java.sql.SQLException;
-import java.util.ArrayList;
-
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import java.io.IOException;
+import java.sql.SQLException;
 
 @WebServlet("/login")
 public class Login extends HttpServlet {

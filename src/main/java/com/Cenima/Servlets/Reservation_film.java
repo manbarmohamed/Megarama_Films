@@ -31,16 +31,18 @@ public class Reservation_film extends HttpServlet {
 			ArrayRes = res.historicalReservation();
 			System.out.println("///////////////////");
 			request.setAttribute("res", ArrayRes);
-			this.getServletContext().getRequestDispatcher("/WEB-INF/reservation.jsp").forward(request, response);
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
+			System.out.println(res.historicalReservation());
+			} catch (SQLException e) {
 			e.printStackTrace();
 		}
+		this.getServletContext().getRequestDispatcher("/WEB-INF/reservation.jsp").forward(request, response);
+
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
+		this.getServletContext().getRequestDispatcher("/WEB-INF/reservation.jsp").forward(request, response);
+		System.out.println("sssssssssssssssssssss");
+
 	}
 
 }

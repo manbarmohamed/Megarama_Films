@@ -20,7 +20,7 @@
 		<url-pattern>/add</url-pattern>
 	</servlet-mapping>
 
-		
+
 		<servlet>
 			<servlet-name>Reservation_film</servlet-name>
 			<servlet-class>com.Cenima.Servlets.Reservation_film</servlet-class>

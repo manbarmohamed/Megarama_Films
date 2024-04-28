@@ -12,7 +12,7 @@ public class DataBaseManager {
 	    public static String jdbcDriver = "com.mysql.cj.jdbc.Driver";
  
 	    
-	    protected static Connection getConnection() {
+	    public static Connection getConnection() {
 	        Connection connection = null;
 	        try {
 	            Class.forName(jdbcDriver);

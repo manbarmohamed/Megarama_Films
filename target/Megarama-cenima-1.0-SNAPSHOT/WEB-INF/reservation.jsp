@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<%@ include file="bootstrap.jsp" %>
+<!--<%@ include file="bootstrap.jsp" %>-->
 <title>reservation</title>
 </head>
 <body>

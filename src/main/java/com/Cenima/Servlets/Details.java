@@ -27,6 +27,7 @@ public class Details extends HttpServlet {
 
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
         FilmsDAOImp flm = new FilmsDAOImp();
         int idFilm = Integer.valueOf(request.getParameter("id"));
         List<Film> list_Film = null;
@@ -39,6 +40,7 @@ public class Details extends HttpServlet {
 
 
         request.getRequestDispatcher("/WEB-INF/details.jsp").forward(request, response);
+
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

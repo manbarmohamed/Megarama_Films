@@ -40,8 +40,6 @@ public class ReservationDAOImp  implements ReservationDAO{
 			
 			Res.add(new Reservation(reserve_id ,film_id , user_id, reservation_date, ticket));
 		}
-		
-
 		return Res;
 	}
 
