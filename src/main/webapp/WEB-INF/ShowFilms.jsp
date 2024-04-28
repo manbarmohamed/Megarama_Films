@@ -15,7 +15,7 @@
 <body>
 
 <header>
-    <div class="logo"><img src="https://i.ibb.co/4pCSmsM/LOGO.png" width="100%"></div>
+    <div class="logo"><img src="https://i.ibb.co/4pCSmsM/LOGO.png" width="100%" alt=""></div>
 
     <ul>
         <li><a href="#" id="a1">HOME</a></li>

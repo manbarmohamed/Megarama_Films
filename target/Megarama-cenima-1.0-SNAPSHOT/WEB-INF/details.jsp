@@ -30,20 +30,12 @@
 <section class="details">
     <div class="wrapper">
         <div class="img-film">
-<<<<<<< HEAD
             <img src="${fl.getFilm_pic()}" width="90%">
-=======
-            <img src="${img}" width="90%">
->>>>>>> f1862385d0a6d56c28bf67483399cd4b5fb3036d
         </div>
         <div class="content-film">
             <div class="titles">
                 <h2>New Episodes</h2>
-<<<<<<< HEAD
                 <h1>${fl.getTitle()}</h1>
-=======
-                <h1>${title}</h1>
->>>>>>> f1862385d0a6d56c28bf67483399cd4b5fb3036d
             </div>
             <br>
             <div class="titles-content">
@@ -56,43 +48,22 @@
                 </div>
 
                 <div class="proprty">
-<<<<<<< HEAD
                     <h3>${fl.getCategory()}</h3>
                 </div>
 
                 <div class="delay">
                     <h3>${fl.getShow_time()}</h3>
                     <h3>${fl.getFilm_duration()} min</h3>
-=======
-                    <h3>${cat}</h3>
-                </div>
-
-                <div class="delay">
-                    <h3>${date}</h3>
-                    <h3>${duration} min</h3>
->>>>>>> f1862385d0a6d56c28bf67483399cd4b5fb3036d
                 </div>
             </div>
             <br>
             <div class="desc">
-<<<<<<< HEAD
                 <p>${fl.getDescription()}</p>
             </div>
             <div class="film-res">
                 <h2>Share</h2>
                 <h3>Ticket : <input type="number" name="ticket" /></h3>
                 <button class="reservation"><a href="#">Reservation</a></button>
-=======
-                <p>${desc}</p>
-            </div>
-            <div class="film-res">
-                <h2>Share</h2>
-                <h3>Prime Film</h3>
-                <form action="Reservation_film" method="POST">
-
-                    <button class="reservation"><a href="#">Reservation</a></button>
-                </form>
->>>>>>> f1862385d0a6d56c28bf67483399cd4b5fb3036d
             </div>
 
         </div>
