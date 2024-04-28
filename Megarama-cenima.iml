@@ -12,7 +12,6 @@
       <src_folder value="file://$MODULE_DIR$/src/main/java" expected_position="1" />
     </src_description>
   </component>
-<<<<<<< HEAD
   <component name="FacetManager">
     <facet type="web" name="Web">
       <configuration>
@@ -73,6 +72,4 @@
       </library>
     </orderEntry>
   </component>
-=======
->>>>>>> cbac0ff54b5f5ef263a584abf98617158d18feb3
 </module>

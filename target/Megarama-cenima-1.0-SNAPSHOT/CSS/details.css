@@ -145,7 +145,7 @@ header > ul > li >a:hover,#a1{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 140px;
+    width: 150px;
 
 }
 .delay > h3 {
@@ -201,6 +201,14 @@ header > ul > li >a:hover,#a1{
     color: white;
     font-size: 17px;
     font-weight: 800;
+    display: flex;
+    align-items: center;
+}
+.film-res > h3 > input{
+    width: 40px;
+    padding: 8px;
+    border-radius: 8px;
+    margin: 1px 3px;
 }
 .reservation{
     background: transparent;

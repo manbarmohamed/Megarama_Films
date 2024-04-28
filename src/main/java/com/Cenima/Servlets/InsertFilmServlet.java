@@ -1,6 +1,5 @@
 package com.Cenima.Servlets;
 import com.Cenima.Classes.Film;
-import com.Cenima.DAO.FilmsDAO;
 import com.Cenima.DAO.FilmsDAOImp;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

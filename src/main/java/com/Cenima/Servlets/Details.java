@@ -11,7 +11,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.Cenima.Classes.Film;
 import com.Cenima.Classes.Reservation;
+import com.Cenima.DAO.FilmsDAOImp;
 import com.Cenima.DAO.ReservationDAOImp;
 
 @WebServlet("/Details")
@@ -26,26 +28,24 @@ public class Details extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        String desc = request.getParameter("desc");
-        String date = request.getParameter("date");
-        String duration = request.getParameter("duration");
-        String cat = request.getParameter("cat");
-        String img = request.getParameter("img");
-        String title = request.getParameter("title");
+        FilmsDAOImp flm = new FilmsDAOImp();
+        int idFilm = Integer.valueOf(request.getParameter("id"));
+        List<Film> list_Film = null;
+        try {
+            list_Film = flm.selectFilmById(idFilm);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        request.setAttribute("list_film", list_Film);
 
 
-        request.setAttribute("desc", desc);
-        request.setAttribute("date", date);
-        request.setAttribute("duration", duration);
-        request.setAttribute("cat", cat);
-        request.setAttribute("img", img);
-        request.setAttribute("title", title);
-        this.getServletContext().getRequestDispatcher("/WEB-INF/details.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/details.jsp").forward(request, response);
+
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // TODO Auto-generated method stub
-        doGet(request, response);
+        request.getRequestDispatcher("/WEB-INF/details.jsp").forward(request, response);
+
     }
 
 }

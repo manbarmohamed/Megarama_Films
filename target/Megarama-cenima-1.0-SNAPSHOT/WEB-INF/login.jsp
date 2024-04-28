@@ -1,91 +1,53 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Sign Up Form by Colorlib</title>
-
-<!-- Font Icon -->
-<link rel="stylesheet"
-	href="fonts/material-icon/css/material-design-iconic-font.min.css">
-
-<!-- Main css -->
-<link rel="stylesheet" href="css2/style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		<%@include file="../CSS/login.css"%>
+	</style>
+	<title>Document</title>
 </head>
 <body>
-<input type="hidden" id="status" value="<%=request.getAttribute("status") %>">
-	<div class="main">
+<header>
+	<div class="logo"><img src="https://i.ibb.co/4pCSmsM/LOGO.png" width="100%"></div>
 
-		<!-- Sing in  Form -->
-		<section class="sign-in">
-			<div class="container">
-				<div class="signin-content">
-					<div class="signin-image">
-						<figure>
-							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFL8JaU154hrowj1Sx9BFRqbbPM8lEKswaGoRTkMTL_Q&s" alt="sing up image">
-						</figure>
-						<a href="registration.jsp" class="signup-image-link">Create an
-							account</a>
-					</div>
+	<ul>
+		<li><a href="#" id="a1">HOME</a></li>
+		<li><a href="#">MOVIE</a></li>
+		<li><a href="#">ABOUT</a></li>
+		<li><a href="#">CONTACT</a></li>
+	</ul>
 
-					<div class="signin-form">
-						<h2 class="form-title">Log in</h2>
-						<form method="POST" action="log" class="register-form"
-							id="login-form">
-							<div class="form-group">
-								<label for="username"><i
-									class="zmdi zmdi-account material-icons-name"></i></label> <input
-									type="text" name="username" id="username"
-									placeholder="Your Name" />
-							</div>
-							<div class="form-group">
-								<label for="password"><i class="zmdi zmdi-lock"></i></label> <input
-									type="password" name="password" id="password"
-									placeholder="Password" />
-							</div>
-							<div class="form-group">
-								<input type="checkbox" name="remember-me" id="remember-me"
-									class="agree-term" /> <label for="remember-me"
-									class="label-agree-term"><span><span></span></span>Remember
-									me</label>
-							</div>
-							<div class="form-group form-button">
-								<input type="submit" name="signin" id="signin"
-									class="form-submit" value="Log in" />
-							</div>
-						</form>
-						<div class="social-login">
-							<span class="social-label">Or login with</span>
-							<ul class="socials">
-								<li><a href="#"><i
-										class="display-flex-center zmdi zmdi-facebook"></i></a></li>
-								<li><a href="#"><i
-										class="display-flex-center zmdi zmdi-twitter"></i></a></li>
-								<li><a href="#"><i
-										class="display-flex-center zmdi zmdi-google"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+	<div class="buttons1">
+		<button id="singin">Sing in</button>
+		<button id="singup">Sing up</button>
+	</div>
+</header>
+
+
+<section class="main">
+	<div class="main-wrapper">
+		<div class="img-login">
+			<img src="https://i.ibb.co/31cPG5W/p.png">
+		</div>
+
+		<div class="formAll">
+			<h1>Login</h1>
+			<form action="POST" method="Login">
+				<label for="username">Username</label><br>
+				<input type="text" name="username" id="username" placeholder="Username or email !">
+				<br>
+				<label for="password">Password</label><br>
+				<input type="password" name="password" id="password" placeholder="Your Password !">
+				<br>
+				<button type="button" id="btn">Login</button>
+			</form>
+		</div>
 
 	</div>
-
-	<!-- JS -->
-	<script src="vendor/jquery/jquery.min.js"></script>
-	<script src="js/main.js"></script>
-	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-	<link rel="stylesheet" href="alert/dist/sweetalert.css">
-
-<script type="text/javascript">
-
-var status = document.getElementById("status").value;
-if(status=="failed"){
-	swal("Sorry","Wrong user name or password","error");
-}
-</script>
+</section>
 </body>
-<!-- This templates was made by Colorlib (https://colorlib.com) -->
 </html>

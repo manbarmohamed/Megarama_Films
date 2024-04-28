@@ -10,14 +10,15 @@ import java.util.List;
 import com.Cenima.Classes.Film;
 
 public class FilmsDAOImp implements FilmsDAO{
-	
-	
+
+
+
 	private String INSERT_FILM_SQL="INSERT INTO films (title, category, description, show_time, price, film_duration, film_pic, ticket_number) VALUES (?, ?, ?, ?, ?, ?, ?, ?);";
 	private String UPDATE_FILM_SQL="UPDATE films SET title = ?,category = ?,descriptionn = ?,show_time = ?,price = ?,film_duration = ?,film_pic = ?,ticket_number = ? WHERE film_id = ?;";
 	private String DELETE_FILM_SQL="DELETE FROM films WHERE film_id = ? ;";
 	private String SELECT_ALL_FILM_SQL="select * from films";
 	private String SELECT_FILM_BY_ID_SQL="select * from films where film_id = ?";
-	
+	private String SELECT_FILM_BY_TITLE_SQL="select * from films where title = ?";
 
 	@Override
 	public void addFilm(Film film) throws SQLException {
@@ -58,8 +59,8 @@ public class FilmsDAOImp implements FilmsDAO{
 		
 	}
 	@Override
-	public Film selectFilmById(int idFilm) throws SQLException {
-		Film film = null;
+	public List<Film> selectFilmById(int idFilm) throws SQLException {
+		List<Film> films = new ArrayList<>();
 		Connection connection = DataBaseManager.getConnection();
 		PreparedStatement statement = connection.prepareStatement(SELECT_FILM_BY_ID_SQL);
 		statement.setInt(1, idFilm);
@@ -74,10 +75,12 @@ public class FilmsDAOImp implements FilmsDAO{
 			String film_duration = rs.getString("film_duration");
 			String film_pic = rs.getString("film_pic");
 			String ticket_number = rs.getString("ticket_number");
-			film = new Film(film_Id,title,category,description,show_time,price,film_duration,film_pic,ticket_number);
+			Film film = new Film(film_Id,title,category,description,show_time,price,film_duration,film_pic,ticket_number);
+			films.add(film);
 		}
-		return film;
+		return films;
 	}
+
 	@Override
 	public boolean updateFilm(Film film) throws SQLException {
 		boolean isUpdated;
@@ -106,6 +109,29 @@ public class FilmsDAOImp implements FilmsDAO{
 		
 		isDeleted = statement.executeUpdate()>0;
 		return isDeleted;
+	}
+
+	@Override
+	public List<Film> selectFilmByTitle(String title_film) throws SQLException {
+		List<Film> films = new ArrayList<>();
+		Connection connection = DataBaseManager.getConnection();
+		PreparedStatement statement = connection.prepareStatement(SELECT_FILM_BY_TITLE_SQL);
+		statement.setString(1, title_film);
+		ResultSet rs = statement.executeQuery();
+		while(rs.next()) {
+			Integer film_Id = rs.getInt("film_id");
+			String title = rs.getString("title");
+			String category = rs.getString("category");
+			String description = rs.getString("description");
+			String show_time = rs.getString("show_time");
+			String price = rs.getString("price");
+			String film_duration = rs.getString("film_duration");
+			String film_pic = rs.getString("film_pic");
+			String ticket_number = rs.getString("ticket_number");
+			Film film = new Film(film_Id,title,category,description,show_time,price,film_duration,film_pic,ticket_number);
+			films.add(film);
+		}
+		return films;
 	}
 
 }

@@ -1,7 +1,6 @@
 package com.Cenima.Classes;
 
 import java.sql.Date;
-
 public class Reservation {
 	
 	public Reservation(Integer reserve_id, Integer film_id, Integer user_id, Date reservation_date, String ticket) {

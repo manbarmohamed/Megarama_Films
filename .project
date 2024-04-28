@@ -28,46 +28,4 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.wst.jsdt.core.jsNature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>src/main/webapp/assets</name>
-			<type>2</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Desktop/login-project/assets</locationURI>
-		</link>
-		<link>
-			<name>src/main/webapp/css2</name>
-			<type>2</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Desktop/login-project/css2</locationURI>
-		</link>
-		<link>
-			<name>src/main/webapp/fonts</name>
-			<type>2</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Desktop/login-project/fonts</locationURI>
-		</link>
-		<link>
-			<name>src/main/webapp/index.jsp</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Desktop/login-project/index.jsp</locationURI>
-		</link>
-		<link>
-			<name>src/main/webapp/login-project</name>
-			<type>2</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Desktop/login-project/login-project</locationURI>
-		</link>
-		<link>
-			<name>src/main/webapp/login.jsp</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Desktop/login-project/login.jsp</locationURI>
-		</link>
-		<link>
-			<name>src/main/webapp/registration.jsp</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Desktop/login-project/registration.jsp</locationURI>
-		</link>
-		<link>
-			<name>src/main/webapp/WEB-INF/registration.jsp</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Desktop/login-project/registration.jsp</locationURI>
-		</link>
-	</linkedResources>
 </projectDescription>
