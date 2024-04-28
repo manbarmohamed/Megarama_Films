@@ -12,9 +12,10 @@
     <list default="true" id="70a6737c-e4ce-45f1-aaee-6518535e06a2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/com/Cenima/Classes/Reservation.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/Cenima/Classes/Reservation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/Cenima/DAO/ReservationDAOImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/Cenima/DAO/ReservationDAOImp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/Classes/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/Classes/Reservation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/DAO/ReservationDAOImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/DAO/ReservationDAOImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/Reservation_film.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/Reservation_film.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/CSS/details.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/CSS/details.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/details.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/details.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT.war" afterDir="false" />
     </list>
@@ -280,7 +281,7 @@
       <updated>1714159173079</updated>
       <workItem from="1714159183362" duration="6952000" />
       <workItem from="1714254120304" duration="7093000" />
-      <workItem from="1714330666641" duration="6026000" />
+      <workItem from="1714330666641" duration="7138000" />
     </task>
     <servers />
   </component>

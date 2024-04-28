@@ -12,7 +12,7 @@ public class ReservationDAOImp  implements ReservationDAO{
 
 	@Override
 	public void saveReservation(Reservation res) throws SQLException {
-		
+		System.out.println("///*******???????");
 		Connection connection = DataBaseManager.getConnection();
 		String sql = "INSERT INTO reservations (user_id , film_id , reservation_date , ticket_number) VALUES (? , ? , ? , ?)";
 		PreparedStatement statement =connection.prepareStatement(sql);
