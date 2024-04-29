@@ -23,6 +23,7 @@ public class FilmsDAOImp implements FilmsDAO{
 	@Override
 	public void addFilm(Film film) throws SQLException {
 		Connection connection = DataBaseManager.getConnection();
+		System.out.println("//////***/////");
 		PreparedStatement statement =connection.prepareStatement(INSERT_FILM_SQL);
 		statement.setString(1, film.getTitle());
 		statement.setString(2,film.getCategory());
@@ -101,14 +102,12 @@ public class FilmsDAOImp implements FilmsDAO{
 		return isUpdated;
 	}
 	@Override
-	public boolean deleteFilm(int idFilm) throws SQLException {
-		boolean isDeleted;
+	public void deleteFilm(int idFilm) throws SQLException {
+		System.out.println("/1/1/1/1/11/");
 		Connection connection = DataBaseManager.getConnection();
 		PreparedStatement statement = connection.prepareStatement(DELETE_FILM_SQL);
 		statement.setInt(1, idFilm);
-		
-		isDeleted = statement.executeUpdate()>0;
-		return isDeleted;
+		statement.executeUpdate();
 	}
 
 	@Override

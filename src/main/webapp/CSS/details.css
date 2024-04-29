@@ -223,7 +223,7 @@ header > ul > li >a:hover,#a1{
     border: none;
 
 }
-.reservation > a {
+.reservation {
     padding: 10px 20px;
     border: 1px solid yellow;
     text-decoration: none;
@@ -232,7 +232,7 @@ header > ul > li >a:hover,#a1{
     font-weight: 800;
     transition: .6s;
 }
-.reservation > a:hover {
+.reservation:hover {
     background: yellow;
     color: black;
 }

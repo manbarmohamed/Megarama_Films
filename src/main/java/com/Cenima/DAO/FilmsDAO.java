@@ -12,7 +12,7 @@ public interface FilmsDAO {
 	List<Film> selectAllFilms() throws SQLException;
 	List<Film> selectFilmById(int idFilm) throws SQLException;
 	boolean updateFilm(Film film) throws SQLException;
-	boolean deleteFilm(int idFilm) throws SQLException;
+	void deleteFilm(int idFilm) throws SQLException;
 	List<Film> selectFilmByTitle(String title_film) throws SQLException;
 
 }
