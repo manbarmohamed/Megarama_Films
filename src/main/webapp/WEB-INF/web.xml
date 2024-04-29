@@ -20,6 +20,16 @@
 		<url-pattern>/add</url-pattern>
 	</servlet-mapping>
 
+	<!--  -->
+	<servlet>
+		<servlet-name>DeleteF</servlet-name>
+		<servlet-class>com.Cenima.Servlets.DeleteF</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteF</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+
 
 		<servlet>
 			<servlet-name>Reservation_film</servlet-name>

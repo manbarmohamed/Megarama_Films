@@ -14,7 +14,7 @@ public class InsertFilmServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("/WEB-INF/InsertFilms.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/addMovies.jsp").forward(request, response);
     }
 
     @Override
@@ -28,13 +28,12 @@ public class InsertFilmServlet extends HttpServlet {
         String filmDuration = request.getParameter("filmDuration");
         String filmPic = request.getParameter("filmPic");
         String ticket = request.getParameter("ticket");
-        Film film = new Film(title,category,description,showTime,price,filmDuration,filmPic,ticket);
         try {
-            filmdao.addFilm(film);
-//            response.sendRedirect("/WEB-INF/AddRuessi.jsp");
+            filmdao.addFilm(new Film(title,category,description,showTime,price,filmDuration,filmPic,ticket));
+            response.sendRedirect("/WEB-INF/deleteMovies.jsp");
+            System.out.println("****************99**************");
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-        request.getRequestDispatcher("/WEB-INF/AddRuessi.jsp").forward(request, response);
     }
 }

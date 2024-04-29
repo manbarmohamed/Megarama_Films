@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.Cenima.Classes.Reservation;
+import com.Cenima.DAO.FilmsDAOImp;
 import com.Cenima.DAO.ReservationDAOImp;
 
 @WebServlet("/Reservation_film")
@@ -27,6 +28,7 @@ public class Reservation_film extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		ReservationDAOImp res = new ReservationDAOImp();
+		FilmsDAOImp films = new FilmsDAOImp();
 		String idF = request.getParameter("id_film");
 		Integer id_user = 2;
 		String date = request.getParameter("date");
@@ -37,6 +39,7 @@ public class Reservation_film extends HttpServlet {
 
         try {
             res.saveReservation(new Reservation(id_user , idFilm , dateFilm , number_ticket));
+			request.setAttribute("listFilms", films.selectAllFilms());
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
