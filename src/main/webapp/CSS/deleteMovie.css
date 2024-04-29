@@ -133,7 +133,7 @@ label{
     background: #1a252f;
 }
 .add > h1{
-    width: 90%;
+    width: 100%;
     background: #1a252f40;
     backdrop-filter: blur(12px);
     border-left: 15px solid #1a252f;

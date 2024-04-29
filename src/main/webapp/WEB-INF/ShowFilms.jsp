@@ -21,7 +21,7 @@
         <li><a href="#" id="a1">HOME</a></li>
         <li><a href="#">MOVIE</a></li>
         <li><a href="#">ABOUT</a></li>
-        <li><a href="#">CONTACT</a></li>
+        <li><a href="/WEB-INF/addMovies.jsp">Admin</a></li>
     </ul>
 
     <div class="buttons1">

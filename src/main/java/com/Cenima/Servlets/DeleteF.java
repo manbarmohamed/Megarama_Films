@@ -13,9 +13,8 @@ public class DeleteF extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         FilmsDAOImp films = new FilmsDAOImp();
-        int id = Integer.valueOf(request.getParameter("id"));
+        String id = request.getParameter("id");
         try {
-            films.deleteFilm(id);
             request.setAttribute("listFilms", films.selectAllFilms());
         } catch (SQLException e) {
             // TODO Auto-generated catch block
@@ -26,6 +25,7 @@ public class DeleteF extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
         this.getServletContext().getRequestDispatcher("/WEB-INF/deleteMovie.jsp").forward(request , response);
     }
 }
