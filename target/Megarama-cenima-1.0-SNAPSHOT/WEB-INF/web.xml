@@ -30,6 +30,16 @@
 		<url-pattern>/delete</url-pattern>
 	</servlet-mapping>
 
+	<!--  -->
+	<servlet>
+		<servlet-name>DL</servlet-name>
+		<servlet-class>com.Cenima.Servlets.DL</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DL</servlet-name>
+		<url-pattern>/deleteid</url-pattern>
+	</servlet-mapping>
+
 
 		<servlet>
 			<servlet-name>Reservation_film</servlet-name>

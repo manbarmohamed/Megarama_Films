@@ -10,24 +10,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70a6737c-e4ce-45f1-aaee-6518535e06a2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/DeleteF.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/CSS/addMovie.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/CSS/deleteMovie.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/addMovies.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/deleteMovie.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/DL.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/Cenima/DAO/FilmsDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/Cenima/DAO/FilmsDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/Cenima/DAO/FilmsDAOImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/com/Cenima/DAO/FilmsDAOImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/DAO/FilmsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/DAO/FilmsDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/DAO/FilmsDAOImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/DAO/FilmsDAOImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/InsertFilmServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/InsertFilmServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/Reservation_film.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/Reservation_film.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/CSS/details.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/CSS/details.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Admin.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/DeleteF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/DeleteF.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/CSS/deleteMovie.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/CSS/deleteMovie.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ShowFilms.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ShowFilms.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/addMovies.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/addMovies.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/deleteMovie.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/deleteMovie.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/CSS/details.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/CSS/details.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/Admin.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -286,7 +278,8 @@
       <workItem from="1714254120304" duration="7093000" />
       <workItem from="1714330666641" duration="10107000" />
       <workItem from="1714379294605" duration="726000" />
-      <workItem from="1714386213095" duration="3988000" />
+      <workItem from="1714386213095" duration="4276000" />
+      <workItem from="1714394857356" duration="1205000" />
     </task>
     <servers />
   </component>
