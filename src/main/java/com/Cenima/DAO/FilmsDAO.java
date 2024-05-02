@@ -8,7 +8,7 @@ import com.Cenima.Classes.Film;
 
 public interface FilmsDAO {
 	
-	void addFilm(Film film) throws SQLException;
+	void addFilm(Film film) ;
 	List<Film> selectAllFilms() throws SQLException;
 	List<Film> selectFilmById(int idFilm) throws SQLException;
 	boolean updateFilm(Film film) throws SQLException;

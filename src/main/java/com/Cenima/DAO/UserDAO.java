@@ -7,7 +7,5 @@ import java.util.List;
 
 public interface UserDAO {
 
-    int verifieUser(String username, String password) throws SQLException;
-    void inertUser(User user) throws SQLException;
-    User getUser(String username) throws SQLException;
+    User getUser(String email, String password) throws SQLException;
 }

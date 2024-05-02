@@ -1,5 +1,6 @@
 package com.Cenima.DAO;
 
+import com.Cenima.Classes.Film;
 import com.Cenima.Classes.User;
 
 import java.sql.*;
@@ -11,50 +12,32 @@ public class UserDAOImp implements UserDAO {
 
 
     @Override
-    public int verifieUser(String username, String password) throws SQLException {
+    public User getUser(String username, String password) throws SQLException {
+        User user=null;
         Connection con = DataBaseManager.getConnection();
-        PreparedStatement prepStmt = con.prepareStatement("SELECT * FROM user1 WHERE username = ? AND password = ?");
-        prepStmt.setString(1, username);
-        prepStmt.setString(2, password);
-        ResultSet rs = prepStmt.executeQuery();
-        if (rs.next()) {
-            String role = rs.getString("role");
-            if (role.equals("admin")) {
-                return 1;
-            }else{
-                return 2;
-            }
-        }else{
-            return 0;
-        }
-    }
-
-    @Override
-    public void inertUser(User user) throws SQLException {
-        Connection con = DataBaseManager.getConnection();
-        PreparedStatement prs = con.prepareStatement("INSERT INTO user1 (email, passwrd, role) VALUES (?,?,?)");
-       prs.setString(1, user.getEmail());
-       prs.setString(2, user.getPassword());
-       prs.setString(3, user.getRole());
-       prs.executeUpdate();
-
-    }
-
-    @Override
-    public User getUser(String username) throws SQLException {
-        Connection con = DataBaseManager.getConnection();
-        PreparedStatement prepStmt = con.prepareStatement("SELECT * FROM user1 WHERE username = ?");
-        prepStmt.setString(1, username);
-        ResultSet rs = prepStmt.executeQuery();
-        if (rs.next()) {
-            User user = new User();
-            user.setEmail(rs.getString("email"));
-            user.setPassword(rs.getString("passwrd"));
+        PreparedStatement ps = con.prepareStatement("select user_id , role from user1 where email=? and passwrd=?");
+        ps.setString(1,username);
+        ps.setString(2,password);
+        ResultSet rs = ps.executeQuery();
+        if(rs.next()){
+            user = new User();
+            user.setUserId(rs.getInt("user_id"));
             user.setRole(rs.getString("role"));
-            return user;
 
         }
-
-        return null;
+        return user;
     }
+
+    public void addUser(User user) throws SQLException {
+        String sql = "INSERT INTO user1 (username , email, passwrd, role) VALUES (?, ?, ?, ?)";
+        Connection connection = DataBaseManager.getConnection();
+        System.out.println("***** Add User *************");
+        PreparedStatement statement =connection.prepareStatement(sql);
+        statement.setString(1, user.getUsername());
+        statement.setString(2, user.getEmail());
+        statement.setString(3, user.getPassword());
+        statement.setString(4, "user");
+        statement.executeUpdate();
+    }
+
 }

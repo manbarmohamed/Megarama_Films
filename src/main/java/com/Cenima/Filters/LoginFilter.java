@@ -31,7 +31,7 @@ public class LoginFilter implements Filter {
         String pass = request.getParameter("password");
         User user = null;
         try {
-            user= userDAO.getUser(mail);
+            user= userDAO.getUser(mail , pass);
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }

@@ -13,13 +13,14 @@ import java.sql.SQLException;
 public class InsertFilmServlet extends HttpServlet {
 
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("/WEB-INF/addMovies.jsp").forward(request, response);
+    protected void doGet(HttpServletRequest request, HttpServletResponse response){
+        request.getRequestDispatcher("/WEB-INF/addMovies.jsp");
     }
 
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) {
         FilmsDAOImp filmdao = new FilmsDAOImp();
+        System.out.println("////////////////22//////////////");
         String title = request.getParameter("title");
         String category = request.getParameter("category");
         String description = request.getParameter("description");
@@ -28,12 +29,13 @@ public class InsertFilmServlet extends HttpServlet {
         String filmDuration = request.getParameter("filmDuration");
         String filmPic = request.getParameter("filmPic");
         String ticket = request.getParameter("ticket");
-        try {
-            filmdao.addFilm(new Film(title,category,description,showTime,price,filmDuration,filmPic,ticket));
-            response.sendRedirect("/WEB-INF/deleteMovies.jsp");
-            System.out.println("****************99**************");
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-    }
-}
+
+        System.out.println(title);
+        System.out.println(category);
+
+        Film film = new Film(null,title,category,description,showTime,price,filmDuration,filmPic,ticket);
+        System.out.println("////" + film );
+
+        filmdao.addFilm(film);
+            this.getServletContext().getRequestDispatcher("/WEB-INF/deleteMovie.jsp");
+        } }

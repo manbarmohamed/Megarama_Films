@@ -21,7 +21,7 @@
         <li><a href="#" id="a1">HOME</a></li>
         <li><a href="#">MOVIE</a></li>
         <li><a href="#">ABOUT</a></li>
-        <li><a href="#">CONTACT</a></li>
+        <li><a href="/WEB-INF/addMovies.jsp">Admin</a></li>
     </ul>
 
 </header>
@@ -31,10 +31,14 @@
     <div class="wrapper">
         <div class="img-film">
             <img src="${fl.getFilm_pic()}" width="90%">
+=======
+            <img src="${img}" width="90%">
+>>>>>>> f1862385d0a6d56c28bf67483399cd4b5fb3036d
         </div>
         <div class="content-film">
             <div class="titles">
                 <h2>New Episodes</h2>
+<<<<<<< HEAD
                 <h1>${fl.getTitle()}</h1>
             </div>
             <br>
@@ -48,16 +52,26 @@
                 </div>
 
                 <div class="proprty">
+<<<<<<< HEAD
                     <h3>${fl.getCategory()}</h3>
                 </div>
 
                 <div class="delay">
                     <h3>${fl.getShow_time()}</h3>
                     <h3>${fl.getFilm_duration()} min</h3>
+=======
+                    <h3>${cat}</h3>
+                </div>
+
+                <div class="delay">
+                    <h3>${date}</h3>
+                    <h3>${duration} min</h3>
+>>>>>>> f1862385d0a6d56c28bf67483399cd4b5fb3036d
                 </div>
             </div>
             <br>
             <div class="desc">
+<<<<<<< HEAD
                 <p>${fl.getDescription()}</p>
             </div>
             <div class="film-res">

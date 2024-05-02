@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.Cenima.Classes.Film;
+import org.hibernate.Session;
 
 public class FilmsDAOImp implements FilmsDAO{
 
@@ -21,20 +22,12 @@ public class FilmsDAOImp implements FilmsDAO{
 	private String SELECT_FILM_BY_TITLE_SQL="select * from films where title = ?";
 
 	@Override
-	public void addFilm(Film film) throws SQLException {
-		Connection connection = DataBaseManager.getConnection();
-		System.out.println("//////***/////");
-		PreparedStatement statement =connection.prepareStatement(INSERT_FILM_SQL);
-		statement.setString(1, film.getTitle());
-		statement.setString(2,film.getCategory());
-		statement.setString(3, film.getDescription());
-		statement.setString(4, film.getShow_time());
-		statement.setString(5,film.getPrice());
-		statement.setString(6, film.getFilm_duration());
-		statement.setString(7, film.getFilm_pic());
-		statement.setString(8, film.getTicket());
-		
-		statement.executeUpdate();
+	public void addFilm(Film film) {
+		Session session = HibernateUtil.getSessionFactory().openSession();
+		session.beginTransaction();
+		session.save(film);
+		session.getTransaction().commit();
+		session.close();
 	}
 	@Override
 	public List<Film> selectAllFilms() throws SQLException {

@@ -15,15 +15,12 @@
 	<div class="logo"><img src="https://i.ibb.co/4pCSmsM/LOGO.png" width="100%"></div>
 
 	<ul>
-		<li><a href="#" id="a1">HOME</a></li>
-		<li><a href="#">MOVIE</a></li>
-		<li><a href="#">ABOUT</a></li>
-		<li><a href="#">CONTACT</a></li>
+
 	</ul>
 
 	<div class="buttons1">
-		<button id="singin">Sing in</button>
-		<button id="singup">Sing up</button>
+		<button id="singin"> <a href="login"> Sing in</a> </button>
+		<button id="singup"> <a href="inscription">Sing up</a> </button>
 	</div>
 </header>
 
@@ -36,14 +33,14 @@
 
 		<div class="formAll">
 			<h1>Login</h1>
-			<form action="log" method="Post">
+			<form action="login" method="POST">
 				<label for="username">Username</label><br>
-				<input type="text" name="username" id="username" placeholder="Username or email !">
+				<input type="text" name="email" id="username" placeholder="Username or email !">
 				<br>
 				<label for="password">Password</label><br>
 				<input type="password" name="password" id="password" placeholder="Your Password !">
 				<br>
-				<button type="button" id="btn">Login</button>
+				<button type="submit" id="btn">Login</button>
 			</form>
 		</div>
 
