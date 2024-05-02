@@ -5,6 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
     <style>
         <%@include file="../CSS/home.css"%>
@@ -25,8 +26,8 @@
     </ul>
 
     <div class="buttons1">
-        <button id="singin">Sing in</button>
-        <button id="singup">Sing up</button>
+        <button id="singup">log out</button>
+        <button id="singup">log out</button>
     </div>
 </header>
 
@@ -115,6 +116,10 @@
     <c:forEach var="film" items="${listFilms}">
     <div class="S-main-hero">
         <div class="card-film">
+            <div>
+                <i class="fa-solid fa-heart-circle-plus"></i>
+                <a href="#">Favorite</a>
+            </div>
             <img  class="cover-img" src="${film.getFilm_pic()}" width="100%">
 
             <div class="film-content ">
@@ -131,6 +136,65 @@
 
         </div>
     </div>
+    </c:forEach>
+
+
+    <c:forEach var="film" items="${filmSearch}">
+        <div class="S-main-hero">
+            <div class="card-film">
+                <img  class="cover-img" src="${film.getFilm_pic()}" width="100%">
+
+                <div class="film-content ">
+                    <h2>${film.getTitle()}</h2>
+                    <h3>${film.getShow_time()}</h3>
+                </div>
+                <div class="film-content2">
+                    <div>
+                        <h2>8K+</h2>
+                        <a href="details?id=${film.getId_fiml()}" id="book">Book</a>
+                    </div>
+                    <h3> ${film.getFilm_duration()} min</h3>
+                </div>
+
+            </div>
+        </div>
+    </c:forEach>
+
+    <p id="alert1">${alert}</p>
+</div>
+
+<br>
+
+<div class="D1">
+    <div class="D1-content">
+        <h2>CATEGORY STREAMING</h2>
+        <h1>Trending Movie Requests</h1>
+
+    </div>
+    <div class="D1-buttons">
+    </div>
+
+</div>
+<div class="S-main">
+    <c:forEach var="film" items="${listFilms}">
+        <div class="S-main-hero">
+            <div class="card-film">
+                <img  class="cover-img" src="${film.getFilm_pic()}" width="100%">
+
+                <div class="film-content ">
+                    <h2>${film.getTitle()}</h2>
+                    <h3>${film.getShow_time()}</h3>
+                </div>
+                <div class="film-content2">
+                    <div>
+                        <h2>8K+</h2>
+                        <a href="details?id=${film.getId_fiml()}" id="book">Book</a>
+                    </div>
+                    <h3> ${film.getFilm_duration()} min</h3>
+                </div>
+
+            </div>
+        </div>
     </c:forEach>
 
     <c:forEach var="film" items="${filmSearch}">
@@ -153,11 +217,22 @@
             </div>
         </div>
     </c:forEach>
+
+    <p id="alert1">${alert}</p>
 </div>
 
 
 
 <script>
+    const al = document.getElementById("alert1");
+    if (al.innerHTML === "."){
+        alert("The Reservation is add Successfully !");
+    }
+    else if(al.innerHTML === ".."){
+        alert("The Reservation is Not added !");
+    }
+
+
     document.getElementById('next').onclick = function(){
         let lists = document.querySelectorAll('.item');
         document.getElementById('slide').appendChild(lists[0]);

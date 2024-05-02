@@ -7,5 +7,5 @@ import java.util.List;
 
 public interface UserDAO {
 
-    User getUserByEmailAndPassword(String email, String password) throws SQLException;
+    User getUser(String email, String password) throws SQLException;
 }

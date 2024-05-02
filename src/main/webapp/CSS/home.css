@@ -331,11 +331,8 @@ i{
     overflow: auto;
     overflow-x: hidden;
     overflow-Y: hidden;
-<<<<<<< HEAD
     width: 160px;
-=======
-    width: 200px;
->>>>>>> f1862385d0a6d56c28bf67483399cd4b5fb3036d
+
     height: 30px;
 }
 .film-content2 > div {

@@ -8,7 +8,7 @@
 		</servlet>
 		<servlet-mapping>
 			<servlet-name>ShowFilmsServlet</servlet-name>
-			<url-pattern>/</url-pattern>
+			<url-pattern>/home</url-pattern>
 		</servlet-mapping>
 
 	<servlet>
@@ -62,13 +62,21 @@
 	<!--  -->
 	<servlet>
 		<servlet-name>Login</servlet-name>
-		<servlet-class>com.Cenima.registration.Login</servlet-class>
+		<servlet-class>com.Cenima.Servlets.Login</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>Login</servlet-name>
-		<url-pattern>/Login</url-pattern>
+		<url-pattern>/</url-pattern>
 	</servlet-mapping>
-
+	<!--  -->
+	<servlet>
+		<servlet-name>Inscription</servlet-name>
+		<servlet-class>com.Cenima.Servlets.Inscription</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Inscription</servlet-name>
+		<url-pattern>/inscription</url-pattern>
+	</servlet-mapping>
 
 	<!--  -->
    		<jsp-config>

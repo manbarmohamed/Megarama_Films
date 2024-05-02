@@ -11,6 +11,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.Cenima.Classes.Reservation;
 import com.Cenima.DAO.FilmsDAOImp;
@@ -27,10 +28,13 @@ public class Reservation_film extends HttpServlet {
 
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		HttpSession session = request.getSession();
 		ReservationDAOImp res = new ReservationDAOImp();
 		FilmsDAOImp films = new FilmsDAOImp();
 		String idF = request.getParameter("id_film");
-		Integer id_user = 2;
+		Integer id_user = (Integer) session.getAttribute("id");
+		System.out.println("******* user id *********");
+		System.out.println(id_user);
 		String date = request.getParameter("date");
 		String number_ticket = request.getParameter("ticket");
 
@@ -38,8 +42,14 @@ public class Reservation_film extends HttpServlet {
 		Date dateFilm = Date.valueOf(date);
 
         try {
-            res.saveReservation(new Reservation(id_user , idFilm , dateFilm , number_ticket));
-			request.setAttribute("listFilms", films.selectAllFilms());
+            if(true){
+				res.saveReservation(new Reservation(id_user , idFilm , dateFilm , number_ticket));
+				request.setAttribute("listFilms", films.selectAllFilms());
+				request.setAttribute("alert" , ".");
+			}
+			else {
+				request.setAttribute("alert" , "..");
+			}
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }

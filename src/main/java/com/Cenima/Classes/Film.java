@@ -1,15 +1,16 @@
 package com.Cenima.Classes;
 
-import java.sql.Date;
+import javax.persistence.*;
 
+@Entity
+@Table(name = "films")
 public class Film {
 	
 	
 	///constructors ////
-	public Film(Integer id_fiml, String title, String category, String description, String show_time, String price,
+	public Film(Integer film_id, String title, String category, String description, String show_time, String price,
 			String film_duration, String film_pic, String ticket) {
-		super();
-		this.id_fiml = id_fiml;
+		this.film_id = film_id;
 		this.title = title;
 		this.category = category;
 		this.description = description;
@@ -23,7 +24,6 @@ public class Film {
 	
 	public Film(String title, String category, String description, String show_time, String price, String film_duration,
 			String film_pic, String ticket) {
-		super();
 		this.title = title;
 		this.category = category;
 		this.description = description;
@@ -36,7 +36,11 @@ public class Film {
 
 
 	///// variables ////
-	private Integer id_fiml;
+	@Id
+	@Column(name= "film_id")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer film_id;
+
 	private String title;
 	private String category;
 	private String description;
@@ -46,12 +50,16 @@ public class Film {
 	private String film_pic;
 	private String ticket;
 
+	public Film() {
+
+	}
+
 	///Getters And Setters ///
 	public Integer getId_fiml() {
-		return id_fiml;
+		return film_id;
 	}
 	public void setId_fiml(Integer id_fiml) {
-		this.id_fiml = id_fiml;
+		this.film_id = id_fiml;
 	}
 	public String getTitle() {
 		return title;
@@ -95,14 +103,6 @@ public class Film {
 	public void setFilm_pic(String film_pic) {
 		this.film_pic = film_pic;
 	}
-	@Override
-	public String toString() {
-		return "Film [id_fiml=" + id_fiml + ", title=" + title + ", category=" + category + ", description="
-				+ description + ", show_time=" + show_time + ", price=" + price + ", film_duration=" + film_duration
-				+ ", film_pic=" + film_pic + ", ticket=" + ticket + "]";
-	}
-
-
 	public String getTicket() {
 		return ticket;
 	}

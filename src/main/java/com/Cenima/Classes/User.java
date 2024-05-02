@@ -13,13 +13,17 @@ public class User {
         }
 
         // Constructeur avec tous les attributs
-        public User(int userId, String userName, String email, String password, String role) {
-            this.userId = userId;
-            this.userName = userName;
+        public User(String username, String email, String password) {
+            this.userName = username;
             this.email = email;
             this.password = password;
-            this.role = role;
         }
+
+        public User(int userId, String email ) {
+        this.userId = userId;
+        this.email = email;
+
+    }
 
 
         public int getUserId() {

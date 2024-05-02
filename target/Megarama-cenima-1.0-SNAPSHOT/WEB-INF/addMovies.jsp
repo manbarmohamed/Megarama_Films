@@ -19,10 +19,9 @@
         </div>
 
         <ul class="header">
-            <li><a href="#" id="a1">Add</a></li>
-            <li><a href="#">Delete</a></li>
-            <li><a href="#">Update</a></li>
-            <li><a href="#">Home</a></li>
+            <li><a href="/WEB-INF/addMovies" id="a1">Add</a></li>
+            <li><a href="/WEB-INF/deleteMovie">Delete</a></li>
+            <li><a href="/WEB-INF/ShowFilms">Home</a></li>
         </ul>
     </div>
 

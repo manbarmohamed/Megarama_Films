@@ -41,9 +41,9 @@
         </div>
 
         <ul class="header">
-            <li><a href="/WEB-INF/addMovies.jsp" id="a1">Add</a></li>
-            <li><a href="/WEB-INF/deleteMovie.jsp">Delete</a></li>
-            <li><a href="/WEB-INF/ShowFilms.jsp">Home</a></li>
+            <li><a href="/WEB-INF/addMovies" id="a1">Add</a></li>
+            <li><a href="/WEB-INF/deleteMovie">Delete</a></li>
+            <li><a href="/WEB-INF/ShowFilms">Home</a></li>
         </ul>
     </div>
 
