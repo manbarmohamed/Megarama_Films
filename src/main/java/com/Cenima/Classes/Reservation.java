@@ -1,5 +1,6 @@
 package com.Cenima.Classes;
 
+import javax.persistence.*;
 import java.sql.Date;
 public class Reservation {
 	
@@ -21,11 +22,25 @@ public class Reservation {
 	public Reservation() {
 		super();
 	}
-	
-	private Integer reserve_id;
-	private Integer film_id;
-	private Integer user_id;
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "reserve_id")
+	private Integer reserve_id; // Clé primaire
+
+	@ManyToOne
+	@JoinColumn(name = "film_id")
+	private Integer film_id; // Clé étrangère
+
+	@ManyToOne
+	@JoinColumn(name = "user_id")
+	private Integer user_id; // Clé étrangère
+
+	@Temporal(TemporalType.DATE)
+	@Column(name = "reservation_date")
 	private Date reservation_date;
+
+	@Column(name = "ticket")
 	private String ticket;
 	
 	

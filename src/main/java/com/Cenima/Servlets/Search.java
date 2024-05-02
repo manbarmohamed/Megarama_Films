@@ -16,12 +16,8 @@ public class Search extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String title = request.getParameter("search");
         FilmsDAOImp filmSearch = new FilmsDAOImp();
-        try {
-            List<Film> ArrayFilms = filmSearch.selectFilmByTitle(title);
-            request.setAttribute("filmSearch" , ArrayFilms);
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
+        List<Film> ArrayFilms = filmSearch.selectFilmByTitle(title);
+        request.setAttribute("filmSearch" , ArrayFilms);
         request.getRequestDispatcher("/WEB-INF/ShowFilms.jsp").forward(request, response);
     }
 

@@ -15,13 +15,8 @@ public class Inscription extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         FilmsDAOImp films = new FilmsDAOImp();
-        try {
-            request.setAttribute("listFilms", films.selectAllFilms());
-            System.out.println(films.selectAllFilms());
-        } catch (SQLException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
+        request.setAttribute("listFilms", films.selectAllFilms());
+        System.out.println(films.selectAllFilms());
         this.getServletContext().getRequestDispatcher("/WEB-INF/registration.jsp").forward(request , response);
     }
 
