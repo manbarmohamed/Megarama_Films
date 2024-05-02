@@ -10,20 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70a6737c-e4ce-45f1-aaee-6518535e06a2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/Classes/Favorite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/Classes/Reaction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/Classes/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/Classes/Reservation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/DAO/FilmsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/DAO/FilmsDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/DAO/FilmsDAOImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/DAO/FilmsDAOImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/DAO/ReservationDAOImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/DAO/ReservationDAOImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/DL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/DL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/DeleteF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/DeleteF.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/Details.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/Details.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/Inscription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/Inscription.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/Search.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/ShowFilmsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/ShowFilmsServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/Classes/Reservation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Cenima/Classes/Reservation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/DAO/FilmsDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Cenima/DAO/FilmsDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/DAO/FilmsDAOImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Cenima/DAO/FilmsDAOImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +65,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Tomcat Server.Tomcat 8.5.100.executor": "Run",
     "Tomcat Server.Unnamed.executor": "Run",
-    "git-widget-placeholder": "modification",
+    "git-widget-placeholder": "CRUD__HIBERNATE",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "C:/Users/MTechno/Desktop/Megarama-cenima/src/main/java",
     "last_opened_file_path": "C:/Users/MTechno/Desktop/Megarama-cenima/src/main/resources",
@@ -299,7 +289,7 @@
       <workItem from="1714503153806" duration="732000" />
       <workItem from="1714516532550" duration="4856000" />
       <workItem from="1714644378036" duration="7018000" />
-      <workItem from="1714661064102" duration="7830000" />
+      <workItem from="1714661064102" duration="8887000" />
     </task>
     <servers />
   </component>

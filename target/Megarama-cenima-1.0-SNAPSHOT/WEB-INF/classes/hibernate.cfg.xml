@@ -21,6 +21,7 @@
 		<property name = "hibernate.hbm2ddl.auto">update</property>
 
 		<mapping class="com.Cenima.Classes.Film" />
-
+		<mapping class="com.Cenima.Classes.Favorite" />
+		<mapping class="com.Cenima.Classes.Reaction" />
 	</session-factory>
 </hibernate-configuration>
