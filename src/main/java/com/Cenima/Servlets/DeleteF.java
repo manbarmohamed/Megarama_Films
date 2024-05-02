@@ -14,12 +14,7 @@ public class DeleteF extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         FilmsDAOImp films = new FilmsDAOImp();
         String id = request.getParameter("id");
-        try {
-            request.setAttribute("listFilms", films.selectAllFilms());
-        } catch (SQLException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
+        request.setAttribute("listFilms", films.selectAllFilms());
         this.getServletContext().getRequestDispatcher("/WEB-INF/deleteMovie.jsp").forward(request , response);
     }
 

@@ -20,12 +20,7 @@ public class DL extends HttpServlet {
 
         FilmsDAOImp films = new FilmsDAOImp();
         Integer id = Integer.valueOf(request.getParameter("id"));
-        try {
-            films.deleteFilm(id);
-        } catch (SQLException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
+        films.deleteFilm(id);
         this.getServletContext().getRequestDispatcher("/WEB-INF/deleteMovie.jsp").forward(request , response);
         }
 }

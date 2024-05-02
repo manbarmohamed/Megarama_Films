@@ -15,13 +15,13 @@ public class ReservationDAOImp  implements ReservationDAO{
 		System.out.println("///*******???????");
 		Connection connection = DataBaseManager.getConnection();
 		String sql = "INSERT INTO reservations (user_id , film_id , reservation_date , ticket_number) VALUES (? , ? , ? , ?)";
-		PreparedStatement statement =connection.prepareStatement(sql);
+		PreparedStatement statement = connection.prepareStatement(sql);
 		statement.setInt(1, res.getUser_id());
 		statement.setInt(2, res.getFilm_id());
 		statement.setDate(3, res.getReservation_date());
 		statement.setString(4, res.getTicket());
 		statement.executeUpdate();
-		
+
 	}
 
 	@Override

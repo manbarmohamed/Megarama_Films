@@ -19,14 +19,9 @@ public class ShowFilmsServlet extends HttpServlet {
     
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		FilmsDAOImp films = new FilmsDAOImp();
-		try {
-			request.setAttribute("listFilms", films.selectAllFilms());
-			System.out.println(films.selectAllFilms());
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		request.getRequestDispatcher("/WEB-INF/ShowFilms.jsp").forward(request, response);
+        request.setAttribute("listFilms", films.selectAllFilms());
+        System.out.println(films.selectAllFilms());
+        request.getRequestDispatcher("/WEB-INF/ShowFilms.jsp").forward(request, response);
 	}
 
 	
