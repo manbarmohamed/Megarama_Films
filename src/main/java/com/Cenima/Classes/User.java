@@ -3,7 +3,16 @@ package com.Cenima.Classes;
 public class User {
 
         private int userId;
-        private String userName;
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    private String username;
         private String email;
         private String password;
         private String role;
@@ -14,7 +23,7 @@ public class User {
 
         // Constructeur avec tous les attributs
         public User(String username, String email, String password) {
-            this.userName = username;
+            this.username = username;
             this.email = email;
             this.password = password;
         }
@@ -32,14 +41,6 @@ public class User {
 
         public void setUserId(int userId) {
             this.userId = userId;
-        }
-
-        public String getUserName() {
-            return userName;
-        }
-
-        public void setUserName(String userName) {
-            this.userName = userName;
         }
 
         public String getEmail() {
@@ -71,7 +72,7 @@ public class User {
         public String toString() {
             return "User{" +
                     "userId=" + userId +
-                    ", userName='" + userName + '\'' +
+
                     ", email='" + email + '\'' +
                     ", password='" + password + '\'' +
                     ", role='" + role + '\'' +

@@ -76,6 +76,7 @@
 	<servlet-mapping>
 		<servlet-name>Inscription</servlet-name>
 		<url-pattern>/inscription</url-pattern>
+
 	</servlet-mapping>
 
 	<!--  -->

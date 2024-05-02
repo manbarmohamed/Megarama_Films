@@ -26,7 +26,7 @@
     </ul>
 
     <div class="buttons1">
-
+        <button id="singin">log out</button>
         <button id="singup">log out</button>
     </div>
 </header>

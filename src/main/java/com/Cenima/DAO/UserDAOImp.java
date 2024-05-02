@@ -3,14 +3,13 @@ package com.Cenima.DAO;
 import com.Cenima.Classes.Film;
 import com.Cenima.Classes.User;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
 public class UserDAOImp implements UserDAO {
+
+
 
     @Override
     public User getUser(String username, String password) throws SQLException {
@@ -34,7 +33,7 @@ public class UserDAOImp implements UserDAO {
         Connection connection = DataBaseManager.getConnection();
         System.out.println("***** Add User *************");
         PreparedStatement statement =connection.prepareStatement(sql);
-        statement.setString(1, user.getUserName());
+        statement.setString(1, user.getUsername());
         statement.setString(2, user.getEmail());
         statement.setString(3, user.getPassword());
         statement.setString(4, "user");

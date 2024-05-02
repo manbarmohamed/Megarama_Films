@@ -10,191 +10,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70a6737c-e4ce-45f1-aaee-6518535e06a2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/DAO/HibernateUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/Inscription.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Diagramme vierge.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/les diagrammes/Diagramme de séquence et d'utilisation.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/les diagrammes/Diagramme_de_Classe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/Filters/LoginFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/LoginServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/Cenima/Filters/LoginFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/Cenima/Servlets/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Megarama-cenima.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Megarama-cenima.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Megarama-cenima.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/Cenima/Classes/Film.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/Cenima/Classes/Reservation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/Cenima/Classes/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/Cenima/DAO/DataBaseManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/Cenima/DAO/FilmsDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/Cenima/DAO/FilmsDAOImp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/Cenima/DAO/ReservationDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/Cenima/DAO/ReservationDAOImp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/Cenima/DAO/UserDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/Cenima/DAO/UserDAOImp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/com/Cenima/Servlets/ShowFilmsServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Megarama_cenima_war_exploded/CSS/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Megarama_cenima_war_exploded/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Megarama_cenima_war_exploded/WEB-INF/AddRuessi.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Megarama_cenima_war_exploded/WEB-INF/InsertFilms.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Megarama_cenima_war_exploded/WEB-INF/ShowFilms.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Megarama_cenima_war_exploded/WEB-INF/bootstrap.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Megarama_cenima_war_exploded/WEB-INF/home.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Megarama_cenima_war_exploded/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Megarama_cenima_war_exploded/WEB-INF/lib/mysql-connector-j-8.3.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Megarama_cenima_war_exploded/WEB-INF/reservation.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Megarama_cenima_war_exploded/WEB-INF/taglibs.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/Megarama_cenima_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/CSS/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/WEB-INF/AddRuessi.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/WEB-INF/Admin.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/WEB-INF/InsertFilms.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/WEB-INF/ShowFilms.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/WEB-INF/classes/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/WEB-INF/lib/mysql-connector-j-8.3.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/WEB-INF/reservation.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/assets/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/assets/img/avataaars.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/assets/img/portfolio/cabin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/assets/img/portfolio/cake.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/assets/img/portfolio/circus.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/assets/img/portfolio/game.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/assets/img/portfolio/safe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/assets/img/portfolio/submarine.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/css2/index-styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/css2/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/css2/style.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/fonts/material-icon/css/material-design-iconic-font.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/fonts/material-icon/css/material-design-iconic-font.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/fonts/material-icon/fonts/Material-Design-Iconic-Font.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/fonts/material-icon/fonts/Material-Design-Iconic-Font.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/fonts/material-icon/fonts/Material-Design-Iconic-Font.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/material-icon/fonts/Material-Design-Iconic-Font.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/material-icon/fonts/Material-Design-Iconic-Font.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-300.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-300.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-300.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-300.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-300.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-300italic.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-300italic.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-300italic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-300italic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-300italic.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-500.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-500.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-500.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-500.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-500.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-500italic.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-500italic.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-500italic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-500italic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-500italic.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-600.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-600.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-600.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-600.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-600.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-700.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-700.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-700.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-700.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-700.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-700italic.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-700italic.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-700italic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-700italic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-700italic.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-800.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-800.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-800.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-800.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-800.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-800italic.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-800italic.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-800italic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-800italic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-800italic.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-900.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-900.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-900.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-900.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-900.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-italic.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-italic.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-italic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-italic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-italic.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/poppins-v5-latin-regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/roboto-condensed-v16-latin-700.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/roboto-condensed-v16-latin-700.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/roboto-condensed-v16-latin-700.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/roboto-condensed-v16-latin-700.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/roboto-condensed-v16-latin-700.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/roboto-condensed-v16-latin-700italic.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/roboto-condensed-v16-latin-700italic.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/roboto-condensed-v16-latin-700italic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/roboto-condensed-v16-latin-700italic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/roboto-condensed-v16-latin-700italic.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/roboto-condensed-v16-latin-italic.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/roboto-condensed-v16-latin-italic.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/roboto-condensed-v16-latin-italic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/roboto-condensed-v16-latin-italic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/roboto-condensed-v16-latin-italic.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/roboto-condensed-v16-latin-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/roboto-condensed-v16-latin-regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/roboto-condensed-v16-latin-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/roboto-condensed-v16-latin-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/fonts/poppins/roboto-condensed-v16-latin-regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/images/loginimg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/images/signin-image.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/images/signup-image.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/js/scripts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/scss/common/extend.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/scss/common/fonts.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/scss/common/global.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/scss/common/minxi.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/scss/common/variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/scss/layouts/main.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/scss/layouts/responsive.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login-project/scss/style.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Megarama_cenima_war_exploded/registration.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/Classes/Film.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/Classes/Film.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/Classes/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/Classes/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/DAO/FilmsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/DAO/FilmsDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/DAO/FilmsDAOImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/DAO/FilmsDAOImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/DAO/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/DAO/UserDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/DAO/UserDAOImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/DAO/UserDAOImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/InsertFilmServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/InsertFilmServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/Reservation_film.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/Reservation_film.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/registration/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/registration/Logout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/Logout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/registration/RegistrationServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/CSS/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/CSS/home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/CSS/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/CSS/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/CSS/rg.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/CSS/rg.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/Logout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/Logout.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ShowFilms.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ShowFilms.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/addMovies.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/addMovies.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/deleteMovie.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/deleteMovie.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/details.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/details.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/registration.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/registration.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/CSS/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/CSS/home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/CSS/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/CSS/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/CSS/rg.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/CSS/rg.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/ShowFilms.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/ShowFilms.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/addMovies.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/addMovies.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/deleteMovie.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/deleteMovie.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/details.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/details.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/registration.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/registration.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/Classes/Film.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Cenima/Classes/Film.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/Classes/Reservation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Cenima/Classes/Reservation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/Classes/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Cenima/Classes/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/DAO/DataBaseManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Cenima/DAO/DataBaseManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/DAO/FilmsDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Cenima/DAO/FilmsDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/DAO/FilmsDAOImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Cenima/DAO/FilmsDAOImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/DAO/ReservationDAOImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Cenima/DAO/ReservationDAOImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/DAO/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Cenima/DAO/UserDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/DAO/UserDAOImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Cenima/DAO/UserDAOImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/Servlets/InsertFilmServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Cenima/Servlets/InsertFilmServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/Servlets/Reservation_film.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Cenima/Servlets/Reservation_film.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -237,37 +85,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Maven.Megarama-cenima [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Megarama-cenima [install].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Tomcat Server.Tomcat 8.5.100.executor&quot;: &quot;Run&quot;,
-    &quot;Tomcat Server.Unnamed.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;modification&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/MTechno/Desktop/Megarama-cenima/src/main/java&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/MTechno/Desktop/Megarama-cenima/src/main/resources&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;fileTemplates&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Maven.Megarama-cenima [clean].executor": "Run",
+    "Maven.Megarama-cenima [install].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Tomcat Server.Tomcat 8.5.100.executor": "Run",
+    "Tomcat Server.Unnamed.executor": "Run",
+    "git-widget-placeholder": "Merging modification",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "C:/Users/MTechno/Desktop/Megarama-cenima/src/main/java",
+    "last_opened_file_path": "C:/Users/MTechno/Desktop/Megarama-cenima/src/main/resources",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "fileTemplates",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;XML&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "XML"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\MTechno\Desktop\Megarama-cenima\src\main\resources" />
@@ -470,7 +318,7 @@
       <workItem from="1714503153806" duration="732000" />
       <workItem from="1714516532550" duration="4856000" />
       <workItem from="1714644378036" duration="7018000" />
-      <workItem from="1714661064102" duration="3486000" />
+      <workItem from="1714661064102" duration="4187000" />
     </task>
     <servers />
   </component>
