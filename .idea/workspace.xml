@@ -9,7 +9,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70a6737c-e4ce-45f1-aaee-6518535e06a2" name="Changes" comment="" />
+    <list default="true" id="70a6737c-e4ce-45f1-aaee-6518535e06a2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/Megarama-cenima.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/Classes/Comments.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/DAO/CommentsDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/DAO/CommentsDAOImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/InsertCommentServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/InsertComment.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/Classes/Favorite.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Cenima/Classes/Favorite.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,48 +63,53 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Maven.Megarama-cenima [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Megarama-cenima [install].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Tomcat Server.Tomcat 8.5.100.executor&quot;: &quot;Run&quot;,
-    &quot;Tomcat Server.Unnamed.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;CRUD__HIBERNATE&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/MTechno/Desktop/Megarama-cenima/src/main/java&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/MTechno/Desktop/Megarama-cenima/src/main/java/com/Cenima/Servlets&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;fileTemplates&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Maven.Megarama-cenima [clean].executor": "Run",
+    "Maven.Megarama-cenima [install].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Tomcat Server.Tomcat 8.5.100.executor": "Run",
+    "Tomcat Server.Unnamed.executor": "Run",
+    "git-widget-placeholder": "commentaire",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "C:/Users/MTechno/Desktop/Megarama-cenima/src/main/java",
+    "last_opened_file_path": "C:/Users/user/Desktop/megarama/Megarama-cenima/src/main/webapp/WEB-INF",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "fileTemplates",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;XML&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "XML"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Desktop\megarama\Megarama-cenima\src\main\webapp\WEB-INF" />
+      <recent name="C:\Users\user\Desktop\megarama\Megarama-cenima\src\main\java\com\Cenima\DAO" />
       <recent name="C:\Users\MTechno\Desktop\Megarama-cenima\src\main\java\com\Cenima\Servlets" />
       <recent name="C:\Users\MTechno\Desktop\Megarama-cenima\src\main\resources" />
       <recent name="C:\Users\MTechno\Desktop\Megarama-cenima\src\main\java\com\Cenima\DAO" />
-      <recent name="C:\Users\MTechno\Desktop\Megarama-cenima\src\main\webapp\WEB-INF" />
-      <recent name="C:\Users\MTechno\Desktop\Megarama-cenima\src\main\webapp\CSS" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\MTechno\Desktop\Megarama-cenima\src\main\webapp" />
       <recent name="C:\Users\MTechno\Desktop\Megarama-cenima\src\main\webapp\fonts" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.Cenima.Servlets" />
+      <recent name="com.Cenima.Classes" />
     </key>
   </component>
   <component name="RunManager">
@@ -108,7 +124,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="27181753-c6da-4291-b356-fcb44a42495b" />
+        <option name="BASE_DIRECTORY_NAME" value="a887eda8-8eb8-426c-8b21-8fcb81a063de" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -294,6 +310,7 @@
       <workItem from="1714644378036" duration="7018000" />
       <workItem from="1714661064102" duration="15001000" />
       <workItem from="1714732358615" duration="1211000" />
+      <workItem from="1714749415038" duration="240000" />
     </task>
     <servers />
   </component>
