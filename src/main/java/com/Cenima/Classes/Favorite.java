@@ -1,78 +1,74 @@
 package com.Cenima.Classes;
 
 import javax.persistence.*;
+
 @Entity
 public class Favorite {
+
     public Favorite() {
     }
-    public Favorite(Film id_film, Film id_user, String title_favorite, String category_favorite, String image_favorite) {
-        this.id_film = id_film;
-        this.id_user = id_user;
-        this.title_favorite = title_favorite;
-        this.category_favorite = category_favorite;
-        this.image_favorite = image_favorite;
+
+    public Favorite(Film film, User user, String favoriteTitle, String favoriteCategory, String favoriteImage) {
+        this.film = film;
+        this.user = user;
+        this.favoriteTitle = favoriteTitle;
+        this.favoriteCategory = favoriteCategory;
+        this.favoriteImage = favoriteImage;
     }
-    //// les variables ////
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id_favorite; // Clé primaire
+    private Integer id;
+
     @ManyToOne
-    @JoinColumn(name = "id_film")
-    private Film id_film; // Clé étrangère vers la table Film
+    @JoinColumn(name = "film_id")
+    private Film film;
+
     @ManyToOne
-    @JoinColumn(name = "id_user")
-    private Film id_user; // Clé étrangère vers la table User
-    private String title_favorite;
-    private String category_favorite;
-    private String image_favorite;
+    @JoinColumn(name = "user_id")
+    private User user;
 
-    ////Get....
-    public Film getId_film() {
-        return id_film;
+    private String favoriteTitle;
+    private String favoriteCategory;
+    private String favoriteImage;
+
+    public Film getFilm() {
+        return film;
     }
 
-    public void setId_film(Film id_film) {
-        this.id_film = id_film;
+    public void setFilm(Film film) {
+        this.film = film;
     }
 
-    public Film getId_user() {
-        return id_user;
+    public User getUser() {
+        return user;
     }
 
-    public void setId_user(Film id_user) {
-        this.id_user = id_user;
+    public void setUser(User user) {
+        this.user = user;
     }
 
-    public String getTitle_favorite() {
-        return title_favorite;
+    public String getFavoriteTitle() {
+        return favoriteTitle;
     }
 
-    /////getters and setters ///
-    public Integer getId_favorite() {
-        return id_favorite;
+    public void setFavoriteTitle(String favoriteTitle) {
+        this.favoriteTitle = favoriteTitle;
     }
 
-    public void setId_favorite(Integer id_favorite) {
-        this.id_favorite = id_favorite;
+    public String getFavoriteCategory() {
+        return favoriteCategory;
     }
 
-    public void setTitle_favorite(String title_favorite) {
-        this.title_favorite = title_favorite;
+    public void setFavoriteCategory(String favoriteCategory) {
+        this.favoriteCategory = favoriteCategory;
     }
 
-    public String getCategory_favorite() {
-        return category_favorite;
+    public String getFavoriteImage() {
+        return favoriteImage;
     }
 
-    public void setCategory_favorite(String category_favorite) {
-        this.category_favorite = category_favorite;
-    }
-
-    public String getImage_favorite() {
-        return image_favorite;
-    }
-
-    public void setImage_favorite(String image_favorite) {
-        this.image_favorite = image_favorite;
+    public void setFavoriteImage(String favoriteImage) {
+        this.favoriteImage = favoriteImage;
     }
 }

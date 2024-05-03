@@ -131,7 +131,7 @@
                     <h2>8K+</h2>
                     <a href="details?id=${film.getId_fiml()}" id="book">Book</a>
                 </div>
-                <h3> ${film.getFilm_duration()} min</h3>
+                <h3> ${film.getFilm_duration()*(20/100)} min</h3>
             </div>
 
         </div>
