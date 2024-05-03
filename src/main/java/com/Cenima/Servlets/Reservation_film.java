@@ -33,27 +33,21 @@ public class Reservation_film extends HttpServlet {
 		FilmsDAOImp films = new FilmsDAOImp();
 		String idF = request.getParameter("id_film");
 		Integer id_user = (Integer) session.getAttribute("id");
-		System.out.println("******* user id *********");
-		System.out.println(id_user);
 		String date = request.getParameter("date");
 		String number_ticket = request.getParameter("ticket");
 
 		Integer idFilm = Integer.valueOf(idF);
 		Date dateFilm = Date.valueOf(date);
 
-        try {
-            if(true){
-				res.saveReservation(new Reservation(id_user , idFilm , dateFilm , number_ticket));
-				request.setAttribute("listFilms", films.selectAllFilms());
-				request.setAttribute("alert" , ".");
-			}
-			else {
-				request.setAttribute("alert" , "..");
-			}
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
+        if(true){
+            res.saveReservation(new Reservation(id_user , idFilm , dateFilm , number_ticket));
+            request.setAttribute("listFilms", films.selectAllFilms());
+            request.setAttribute("alert" , ".");
         }
-		this.getServletContext().getRequestDispatcher("/WEB-INF/ShowFilms.jsp").forward(request , response);
+        else {
+            request.setAttribute("alert" , "..");
+        }
+        this.getServletContext().getRequestDispatcher("/WEB-INF/ShowFilms.jsp").forward(request , response);
     }
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
