@@ -10,10 +10,10 @@ public class Reaction {
     private Integer id_reaction; // Clé primaire
     @ManyToOne
     @JoinColumn(name = "id_film") // Clé étrangère vers la table Film
-    private Integer id_film;
+    private Film id_film;
     @ManyToOne
     @JoinColumn(name = "id_user") // Clé étrangère vers la table User
-    private Integer id_user;
+    private Film id_user;
     private String comments;
     private Double notation;
 
@@ -22,7 +22,7 @@ public class Reaction {
     }
 
     // Constructeur avec tous les paramètres
-    public Reaction(Integer id_reaction, Integer id_film, Integer id_user, String comments, Double notation) {
+    public Reaction(Integer id_reaction, Film id_film, Film id_user, String comments, Double notation) {
         this.id_reaction = id_reaction;
         this.id_film = id_film;
         this.id_user = id_user;
@@ -54,19 +54,19 @@ public class Reaction {
     public void setNotation(Double notation) {
         this.notation = notation;
     }
-    public Integer getId_film() {
+    public Film getId_film() {
         return id_film;
     }
 
-    public void setId_film(Integer id_film) {
+    public void setId_film(Film id_film) {
         this.id_film = id_film;
     }
 
-    public Integer getId_user() {
+    public Film getId_user() {
         return id_user;
     }
 
-    public void setId_user(Integer id_user) {
+    public void setId_user(Film id_user) {
         this.id_user = id_user;
     }
 }

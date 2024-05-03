@@ -25,18 +25,18 @@ public class Inscription extends HttpServlet {
 
         FilmsDAOImp films = new FilmsDAOImp();
         UserDAOImp InscUser = new UserDAOImp();
+
         String username = request.getParameter("username");
         String email = request.getParameter("email");
         String password = request.getParameter("password");
+
         User user = new User(username, email , password);
-        try {
-            InscUser.addUser(user);
-            HttpSession session = request.getSession();
-            session.setAttribute("NewUser" , user);
-            request.setAttribute("listFilms", films.selectAllFilms());
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
+        InscUser.addUser(user);
+
+        HttpSession session = request.getSession();
+        session.setAttribute("NewUser" , user);
+        request.setAttribute("listFilms", films.selectAllFilms());
+        
         this.getServletContext().getRequestDispatcher("/WEB-INF/ShowFilms.jsp").forward(request , response);
     }
 }
