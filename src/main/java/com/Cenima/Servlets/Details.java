@@ -32,7 +32,7 @@ public class Details extends HttpServlet {
         int idFilm = Integer.valueOf(request.getParameter("id"));
         System.out.println(">>>>>>>>>>> id pour get film " + idFilm);
         request.setAttribute("films", flm.selectFilmById(idFilm));
-        System.out.println(">>>>>>>>>>>  film >>>>>>> "  + flm.selectFilmById(idFilm).getFilm_pic());
+        System.out.println(">>>>>>>>>>>  film >>>>>>> "  + flm.selectFilmById(idFilm));
         request.getRequestDispatcher("/WEB-INF/details.jsp").forward(request , response);
     }
 

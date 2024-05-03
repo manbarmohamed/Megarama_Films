@@ -24,10 +24,11 @@ public class ReservationDAOImp  implements ReservationDAO{
 
 	@Override
 	public List<Reservation> historicalReservation() {
-		Session session = HibernateUtil.getSessionFactory().openSession();
-		List<Reservation> Res = session.createQuery("FROM Reservation", Reservation.class).getResultList();
-		session.close();
-		return Res;
+//		Session session = HibernateUtil.getSessionFactory().openSession();
+//		List<Reservation> Res = session.createQuery("FROM Reservation", Reservation.class).getResultList();
+//		session.close();
+//		return Res;
+		return null;
 	}
 
 

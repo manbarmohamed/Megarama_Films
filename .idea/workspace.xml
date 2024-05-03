@@ -11,22 +11,19 @@
   <component name="ChangeListManager">
     <list default="true" id="70a6737c-e4ce-45f1-aaee-6518535e06a2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Megarama-cenima.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Megarama-cenima.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/Classes/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/Classes/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/Classes/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/Classes/Reservation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/DAO/ReservationDAOImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/DAO/ReservationDAOImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/DAO/UserDAOImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/DAO/UserDAOImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/Details.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/Details.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/Inscription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/Inscription.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/LoginServlet.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/Reservation_film.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/Reservation_film.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/details.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/details.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/Classes/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/Classes/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/DAO/ReservationDAOImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/DAO/ReservationDAOImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/DAO/UserDAOImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/DAO/UserDAOImp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/Servlets/Reservation_film.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/Servlets/Reservation_film.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/details.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/details.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/Classes/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Cenima/Classes/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/Classes/Reservation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Cenima/Classes/Reservation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/DAO/ReservationDAOImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Cenima/DAO/ReservationDAOImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/Servlets/LoginServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/DAO/UserDAOImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Cenima/DAO/UserDAOImp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/Servlets/Reservation_film.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Cenima/Servlets/Reservation_film.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -303,7 +300,7 @@
       <workItem from="1714503153806" duration="732000" />
       <workItem from="1714516532550" duration="4856000" />
       <workItem from="1714644378036" duration="7018000" />
-      <workItem from="1714661064102" duration="12186000" />
+      <workItem from="1714661064102" duration="15001000" />
     </task>
     <servers />
   </component>

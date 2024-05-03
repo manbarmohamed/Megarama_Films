@@ -23,6 +23,15 @@ public class UserDAOImp implements UserDAO {
         session.close();
         return user;
     }
+
+    public User getUserById(Integer id_user){
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        Query<User> query = session.createQuery("FROM User WHERE userId=:id_user", User.class);
+        query.setParameter("id_user", id_user);
+        User user = query.uniqueResult();
+        session.close();
+        return user;
+    }
 //    public User getUser(String username, String password) throws SQLException {
 //        User user=null;
 //        Connection con = DataBaseManager.getConnection();
