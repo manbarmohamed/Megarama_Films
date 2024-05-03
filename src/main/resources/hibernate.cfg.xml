@@ -25,5 +25,6 @@
 		<mapping class="com.Cenima.Classes.Reaction" />
 		<mapping class="com.Cenima.Classes.User" />
 		<mapping class="com.Cenima.Classes.Reservation" />
+
 	</session-factory>
 </hibernate-configuration>

@@ -29,14 +29,14 @@ public class Inscription extends HttpServlet {
         String username = request.getParameter("username");
         String email = request.getParameter("email");
         String password = request.getParameter("password");
-
-        User user = new User(username, email , password);
+        String role = "user";
+        User user = new User(username, email , password , role);
         InscUser.addUser(user);
 
         HttpSession session = request.getSession();
         session.setAttribute("NewUser" , user);
         request.setAttribute("listFilms", films.selectAllFilms());
-        
+
         this.getServletContext().getRequestDispatcher("/WEB-INF/ShowFilms.jsp").forward(request , response);
     }
 }

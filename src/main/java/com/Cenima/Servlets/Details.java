@@ -28,14 +28,12 @@ public class Details extends HttpServlet {
 
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        FilmsDAO flm = new FilmsDAOImp();
+        FilmsDAOImp flm = new FilmsDAOImp();
         int idFilm = Integer.valueOf(request.getParameter("id"));
-        try {
-            request.setAttribute("film", flm.selectFilmById(idFilm));
-        } catch (Exception e) {
-            throw new ServletException("Error retrieving film with ID: " + idFilm, e);
-        }
-        request.getRequestDispatcher("/WEB-INF/details.jsp").forward(request, response);
+        System.out.println(">>>>>>>>>>> id pour get film " + idFilm);
+        request.setAttribute("films", flm.selectFilmById(idFilm));
+        System.out.println(">>>>>>>>>>>  film >>>>>>> "  + flm.selectFilmById(idFilm));
+        request.getRequestDispatcher("/WEB-INF/details.jsp").forward(request , response);
     }
 
 

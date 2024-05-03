@@ -2,9 +2,12 @@ package com.Cenima.Classes;
 
 import javax.persistence.*;
 import java.sql.Date;
+import java.time.LocalDate;
+
+@Entity
 public class Reservation {
 	
-	public Reservation(Integer reserve_id, Integer film_id, Integer user_id, Date reservation_date, String ticket) {
+	public Reservation(Integer reserve_id, Film film_id, User user_id, LocalDate reservation_date, String ticket) {
 		super();
 		this.reserve_id = reserve_id;
 		this.film_id = film_id;
@@ -12,7 +15,7 @@ public class Reservation {
 		this.reservation_date = reservation_date;
 		this.ticket = ticket;
 	}
-	public Reservation(Integer user_id, Integer film_id, Date reservation_date, String ticket) {
+	public Reservation(User user_id, Film film_id, LocalDate reservation_date, String ticket) {
 		super();
 		this.film_id = film_id;
 		this.user_id = user_id;
@@ -30,15 +33,15 @@ public class Reservation {
 
 	@ManyToOne
 	@JoinColumn(name = "film_id")
-	private Integer film_id; // Clé étrangère
+	private Film film_id; // Clé étrangère
 
 	@ManyToOne
 	@JoinColumn(name = "user_id")
-	private Integer user_id; // Clé étrangère
+	private User user_id; // Clé étrangère
 
-	@Temporal(TemporalType.DATE)
+
 	@Column(name = "reservation_date")
-	private Date reservation_date;
+	private LocalDate reservation_date;
 
 	@Column(name = "ticket")
 	private String ticket;
@@ -50,22 +53,22 @@ public class Reservation {
 	public void setReserve_id(Integer reserve_id) {
 		this.reserve_id = reserve_id;
 	}
-	public Integer getFilm_id() {
+	public Film getFilm_id() {
 		return film_id;
 	}
-	public void setFilm_id(Integer film_id) {
+	public void setFilm_id(Film film_id) {
 		this.film_id = film_id;
 	}
-	public Integer getUser_id() {
+	public User getUser_id() {
 		return user_id;
 	}
-	public void setUser_id(Integer user_id) {
+	public void setUser_id(User user_id) {
 		this.user_id = user_id;
 	}
-	public Date getReservation_date() {
+	public LocalDate getReservation_date() {
 		return reservation_date;
 	}
-	public void setReservation_date(Date reservation_date) {
+	public void setReservation_date(LocalDate reservation_date) {
 		this.reservation_date = reservation_date;
 	}
 	public String getTicket() {
