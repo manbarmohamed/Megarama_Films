@@ -9,7 +9,7 @@
 		<property name = "hibernate.connection.url">jdbc:mysql://localhost:3308/bdtest</property>
 
 
-		<property name = "hibernate.connection.username">root</property>
+		<property name = "hibernate.connection.username">Bahy Imane</property>
 
 
 		<property name = "hibernate.connection.password"></property>
@@ -25,6 +25,7 @@
 		<mapping class="com.Cenima.Classes.Reaction" />
 		<mapping class="com.Cenima.Classes.User" />
 		<mapping class="com.Cenima.Classes.Reservation" />
+		<mapping class="com.Cenima.Classes.Comments" />
 
 	</session-factory>
 </hibernate-configuration>
