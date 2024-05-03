@@ -33,6 +33,8 @@ public class Reservation_film extends HttpServlet {
 		FilmsDAOImp films = new FilmsDAOImp();
 		String idF = request.getParameter("id_film");
 		Integer id_user = (Integer) session.getAttribute("id");
+		System.out.println("******* user id *********");
+		System.out.println(id_user);
 		String date = request.getParameter("date");
 		String number_ticket = request.getParameter("ticket");
 

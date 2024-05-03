@@ -14,7 +14,7 @@ import org.hibernate.Session;
 public class ReservationDAOImp  implements ReservationDAO{
 
 	@Override
-	public void saveReservation(Reservation res){
+	public void saveReservation(Reservation res) {
 		Session session = HibernateUtil.getSessionFactory().openSession();
 		session.beginTransaction();
 		session.save(res);
@@ -22,6 +22,16 @@ public class ReservationDAOImp  implements ReservationDAO{
 		session.close();
 	}
 
+	@Override
+	public List<Reservation> historicalReservation() {
+		Session session = HibernateUtil.getSessionFactory().openSession();
+		List<Reservation> Res = session.createQuery("FROM Reservation", Reservation.class).getResultList();
+		session.close();
+		return Res;
+	}
+
+
+//	@Override
 //	public void saveReservation(Reservation res) throws SQLException {
 //		System.out.println("///*******???????");
 //		Connection connection = DataBaseManager.getConnection();
@@ -34,15 +44,9 @@ public class ReservationDAOImp  implements ReservationDAO{
 //		statement.executeUpdate();
 //
 //	}
-
-	@Override
-	public List<Reservation> historicalReservation() {
-		Session session = HibernateUtil.getSessionFactory().openSession();
-		List<Reservation> res = session.createQuery("FROM Film", Reservation.class).getResultList();
-		session.close();
-		return res;
-	}
-
+//
+//	@Override
+//
 //	public List<Reservation> historicalReservation() throws SQLException {
 //		List<Reservation> Res = new ArrayList<>();
 //		Connection connection =DataBaseManager.getConnection();

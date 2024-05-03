@@ -11,14 +11,23 @@
   <component name="ChangeListManager">
     <list default="true" id="70a6737c-e4ce-45f1-aaee-6518535e06a2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/Classes/Favorite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/Classes/Favorite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/Classes/Reaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/Classes/Reaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Megarama-cenima.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Megarama-cenima.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/Classes/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/Classes/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/DAO/ReservationDAOImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/DAO/ReservationDAOImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/DAO/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/DAO/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/DAO/UserDAOImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/DAO/UserDAOImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/Details.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/Details.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/Inscription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/Inscription.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/LoginServlet.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/Reservation_film.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/Reservation_film.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/details.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/details.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/Classes/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/Classes/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/DAO/ReservationDAOImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/DAO/ReservationDAOImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/Servlets/Reservation_film.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/Servlets/Reservation_film.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/details.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/details.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/Classes/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Cenima/Classes/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/DAO/ReservationDAOImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Cenima/DAO/ReservationDAOImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/Servlets/LoginServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/Servlets/Reservation_film.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Cenima/Servlets/Reservation_film.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +82,7 @@
     "git-widget-placeholder": "CRUD__HIBERNATE",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "C:/Users/MTechno/Desktop/Megarama-cenima/src/main/java",
-    "last_opened_file_path": "C:/Users/MTechno/Desktop/Megarama-cenima/src/main/resources",
+    "last_opened_file_path": "C:/Users/MTechno/Desktop/Megarama-cenima/src/main/java/com/Cenima/Servlets",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -94,8 +103,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\MTechno\Desktop\Megarama-cenima\src\main\resources" />
       <recent name="C:\Users\MTechno\Desktop\Megarama-cenima\src\main\java\com\Cenima\Servlets" />
+      <recent name="C:\Users\MTechno\Desktop\Megarama-cenima\src\main\resources" />
       <recent name="C:\Users\MTechno\Desktop\Megarama-cenima\src\main\java\com\Cenima\DAO" />
       <recent name="C:\Users\MTechno\Desktop\Megarama-cenima\src\main\webapp\WEB-INF" />
       <recent name="C:\Users\MTechno\Desktop\Megarama-cenima\src\main\webapp\CSS" />
@@ -294,7 +303,7 @@
       <workItem from="1714503153806" duration="732000" />
       <workItem from="1714516532550" duration="4856000" />
       <workItem from="1714644378036" duration="7018000" />
-      <workItem from="1714661064102" duration="9600000" />
+      <workItem from="1714661064102" duration="12186000" />
     </task>
     <servers />
   </component>
@@ -307,11 +316,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/Inscription.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/InsertFilmServlet.java</url>
           <line>38</line>
