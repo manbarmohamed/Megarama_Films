@@ -22,5 +22,5 @@ public class DL extends HttpServlet {
         Integer id = Integer.valueOf(request.getParameter("id"));
         films.deleteFilm(id);
         this.getServletContext().getRequestDispatcher("/WEB-INF/deleteMovie.jsp").forward(request , response);
-        }
+    }
 }

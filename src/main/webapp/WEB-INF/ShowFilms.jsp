@@ -10,6 +10,7 @@
     <style>
         <%@include file="../CSS/home.css"%>
     </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 
@@ -42,24 +43,26 @@
             <div class="horizontal-card">
                 <div class="card-image">
                     <img src="${fav.getFavoriteImage()}"
-                         alt="Image de la carte">
+                         alt="Image de la carte" style="width: 100%; height: 135px;">
                 </div>
                 <div class="card-content">
                     <h3>${fav.getFavoriteTitle()}</h3>
                     <p>${fav.getFavoriteCategory()}</p>
-                    <a href="#" class="card-link">En savoir plus</a>
+                    <a href="details?id=${fav.getFilm().getId_fiml()}" id="book">Book</a>
+                    <a href="del?id=${fav.getId()}" id="book">Delete</a>
                 </div>
             </div>
         </c:forEach>
             <div class="horizontal-card">
                 <div class="card-image">
                     <img src="https://t3.ftcdn.net/jpg/05/71/06/76/360_F_571067620_JS5T5TkDtu3gf8Wqm78KoJRF1vobPvo6.jpg"
-                         alt="Image de la carte">
+                         alt="Image de la carte" style="width: 100%; height: 135px;">
                 </div>
                 <div class="card-content">
                     <h3>Titre de la carte</h3>
                     <p>Description de la carte</p>
-                    <a href="#" class="card-link">En savoir plus</a>
+                    <a href="details?id=${fav.getFilm()}" id="book">Book</a>
+                    <a href="details?id=${film.getFilm()}" id="book">Delete</a>
                 </div>
             </div>
 

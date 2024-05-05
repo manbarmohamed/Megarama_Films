@@ -42,8 +42,8 @@
 
         <ul class="header">
             <li><a href="/WEB-INF/addMovies" id="a1">Add</a></li>
-            <li><a href="/WEB-INF/deleteMovie">Delete</a></li>
-            <li><a href="/WEB-INF/ShowFilms">Home</a></li>
+            <li><a href="/Megarama_cenima_war_exploded/deleteid">Delete</a></li>
+            <li><a href="${response.sendRedirect(request.getContextPath()+"/") }">Home</a></li>
         </ul>
     </div>
 

@@ -95,6 +95,14 @@
 		<url-pattern>/fav</url-pattern>
 	</servlet-mapping>
 	<!--  -->
+	<servlet>
+		<servlet-name>DeleteFavoriteServlet</servlet-name>
+		<servlet-class>com.Cenima.Servlets.DeleteFavoriteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteFavoriteServlet</servlet-name>
+		<url-pattern>/del</url-pattern>
+	</servlet-mapping>
 	<!--  -->
    		<jsp-config>
         	<jsp-property-group>

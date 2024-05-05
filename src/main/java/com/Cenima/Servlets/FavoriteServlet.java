@@ -22,6 +22,8 @@ public class FavoriteServlet extends HttpServlet {
         Integer id_user=  (Integer) session.getAttribute("id");
         List<Favorite> favoritesWithDetails = favoriteDAO.getFavoritesByUserId(id_user);
         request.setAttribute("favoritesWithDetails", favoritesWithDetails);
+        FilmsDAOImp film = new FilmsDAOImp();
+        request.setAttribute("listFilms", film.selectAllFilms());
         System.out.println(favoritesWithDetails);
         request.getRequestDispatcher("/WEB-INF/ShowFilms.jsp").forward(request, response);
     }
@@ -46,6 +48,12 @@ public class FavoriteServlet extends HttpServlet {
 
         List<Favorite> favoritesWithDetails = favoriteDAO.getFavoritesByUserId(id_user);
         request.setAttribute("favoritesWithDetails", favoritesWithDetails);
+
+        try {
+            request.setAttribute("listFilms", filmsDAO.selectAllFilms());
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
         System.out.println(favoritesWithDetails);
         System.out.println("////////////////////////////dopost favorite //////////////////");
 
