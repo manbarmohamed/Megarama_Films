@@ -68,6 +68,18 @@ public class Favorite {
         return favoriteImage;
     }
 
+    @Override
+    public String toString() {
+        return "Favorite{" +
+                "id=" + id +
+                ", film=" + film +
+                ", user=" + user +
+                ", favoriteTitle='" + favoriteTitle + '\'' +
+                ", favoriteCategory='" + favoriteCategory + '\'' +
+                ", favoriteImage='" + favoriteImage + '\'' +
+                '}';
+    }
+
     public void setFavoriteImage(String favoriteImage) {
         this.favoriteImage = favoriteImage;
     }

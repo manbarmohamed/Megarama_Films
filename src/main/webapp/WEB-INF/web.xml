@@ -78,7 +78,16 @@
 		<url-pattern>/inscription</url-pattern>
 
 	</servlet-mapping>
-
+	<!--  -->
+	<servlet>
+		<servlet-name>FavoriteServlet</servlet-name>
+		<servlet-class>com.Cenima.Servlets.FavoriteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FavoriteServlet</servlet-name>
+		<url-pattern>/fav</url-pattern>
+	</servlet-mapping>
+	<!--  -->
 	<!--  -->
    		<jsp-config>
         	<jsp-property-group>
