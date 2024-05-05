@@ -39,7 +39,14 @@
 		<servlet-name>DL</servlet-name>
 		<url-pattern>/deleteid</url-pattern>
 	</servlet-mapping>
-
+	<servlet>
+		<servlet-name>InsertCommentServlet</servlet-name>
+		<servlet-class>com.Cenima.Servlets.InsertCommentServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>InsertCommentServlet</servlet-name>
+		<url-pattern>/comment</url-pattern>
+	</servlet-mapping>
 
 		<servlet>
 			<servlet-name>Reservation_film</servlet-name>
