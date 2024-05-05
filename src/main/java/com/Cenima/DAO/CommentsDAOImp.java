@@ -18,7 +18,6 @@ public class CommentsDAOImp implements CommentsDAO {
         session.close();
     }
 
-
     @Override
     public void deleteComment(int commentId) {
         Session session = HibernateUtil.getSessionFactory().openSession();

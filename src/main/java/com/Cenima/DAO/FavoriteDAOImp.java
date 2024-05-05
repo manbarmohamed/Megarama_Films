@@ -28,20 +28,12 @@ public class FavoriteDAOImp implements FavoriteDAO{
     }
 
     @Override
-    public List<Object[]> getFavoritesByUserId(int userId) {
-        List<Object[]> favorites;
+    public List<Favorite> getFavoritesByUserId(int userId) {
         Session session = HibernateUtil.getSessionFactory().openSession();
-        String hql = "SELECT u.username, " +
-                "fa.favoriteTitle, fa.favoriteCategory, fa.favoriteImage " +
-                "FROM Favorite fa " +
-                "JOIN fa.user u " +
-                "WHERE u.userId = :userId " + // Filter by user ID
-                "ORDER BY u.username";
-        Query<Object[]> query = session.createQuery(hql);
-        query.setParameter("userId", userId); // Set the parameter value
-        favorites = query.getResultList();
-
-        return favorites;
+        String hql = "SELECT fa FROM Favorite fa WHERE fa.user.id = :userId";
+        Query<Favorite> query = session.createQuery(hql, Favorite.class);
+        query.setParameter("userId", userId);
+        return query.getResultList();
     }
 
 }

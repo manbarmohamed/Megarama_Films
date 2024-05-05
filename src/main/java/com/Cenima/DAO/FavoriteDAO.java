@@ -9,7 +9,7 @@ import java.util.List;
 public interface FavoriteDAO {
     void addFavorite(Favorite favorite) ;
     void deleteFavorite(int idFavorite) ;
-    List<Object[]> getFavoritesByUserId(int userId);
+    List<Favorite> getFavoritesByUserId(int userId);
 
 
 }

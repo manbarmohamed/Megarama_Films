@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import com.Cenima.Classes.Favorite;
 import com.Cenima.DAO.FavoriteDAO;
 import com.Cenima.DAO.FavoriteDAOImp;
 import com.Cenima.DAO.FilmsDAOImp;
@@ -29,7 +30,7 @@ public class ShowFilmsServlet extends HttpServlet {
 		FavoriteDAO favoriteDAO = new FavoriteDAOImp();
 		HttpSession session = request.getSession();
 		Integer id_user=  (Integer) session.getAttribute("id");
-		List<Object[]> favoritesWithDetails = favoriteDAO.getFavoritesByUserId(id_user);
+		List<Favorite> favoritesWithDetails = favoriteDAO.getFavoritesByUserId(id_user);
 		request.setAttribute("favoritesWithDetails", favoritesWithDetails);
 		System.out.println(favoritesWithDetails);
 		System.out.println("////////////////////////////doget show //////////////////");

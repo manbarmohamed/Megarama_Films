@@ -19,11 +19,10 @@ public class FavoriteServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         FavoriteDAO favoriteDAO = new FavoriteDAOImp();
         HttpSession session = request.getSession();
-       Integer id_user=  (Integer) session.getAttribute("id");
-        List<Object[]> favoritesWithDetails = favoriteDAO.getFavoritesByUserId(id_user);
+        Integer id_user=  (Integer) session.getAttribute("id");
+        List<Favorite> favoritesWithDetails = favoriteDAO.getFavoritesByUserId(id_user);
         request.setAttribute("favoritesWithDetails", favoritesWithDetails);
         System.out.println(favoritesWithDetails);
-        System.out.println("////////////////////////////doget favorite //////////////////");
         request.getRequestDispatcher("/WEB-INF/ShowFilms.jsp").forward(request, response);
     }
 
@@ -44,6 +43,10 @@ public class FavoriteServlet extends HttpServlet {
         Film film  =  filmsDAO.selectFilmById(id_film);
         User user  =  userDAO.getUserById(id_user);
         favoriteDAO.addFavorite(new Favorite(film,user,favoriteTitle,favoriteCategory,favoriteImage));
+
+        List<Favorite> favoritesWithDetails = favoriteDAO.getFavoritesByUserId(id_user);
+        request.setAttribute("favoritesWithDetails", favoritesWithDetails);
+        System.out.println(favoritesWithDetails);
         System.out.println("////////////////////////////dopost favorite //////////////////");
 
         request.getRequestDispatcher("/WEB-INF/ShowFilms.jsp").forward(request, response);

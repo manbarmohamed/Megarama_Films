@@ -24,28 +24,28 @@ public class LoginFilter implements Filter {
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain chain) throws ServletException, IOException, IOException {
 
-        HttpServletRequest request = (HttpServletRequest) servletRequest;
-        HttpServletResponse response = (HttpServletResponse) servletResponse;
-
-        String mail = request.getParameter("username");
-        String pass = request.getParameter("password");
-        User user = null;
-        try {
-            user= userDAO.getUser(mail , pass);
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-        HttpSession session = request.getSession();
-        session.setAttribute("user", user);
-
-        if(user != null && user.getPassword().equals(pass)){
-            chain.doFilter(request, response);
-        }
-        else{
-            request.setAttribute("error","User not found");
-            RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/login.jsp");
-            dispatcher.include(request, response);
-        }
-        response.sendRedirect(request.getContextPath() + "/WEB-INF/login.jsp");
+//        HttpServletRequest request = (HttpServletRequest) servletRequest;
+//        HttpServletResponse response = (HttpServletResponse) servletResponse;
+//
+//        String mail = request.getParameter("username");
+//        String pass = request.getParameter("password");
+//        User user = null;
+//        try {
+//            user= userDAO.getUser(mail , pass);
+//        } catch (SQLException e) {
+//            throw new RuntimeException(e);
+//        }
+//        HttpSession session = request.getSession();
+//        session.setAttribute("user", user);
+//
+//        if(user != null && user.getPassword().equals(pass)){
+//            chain.doFilter(request, response);
+//        }
+//        else{
+//            request.setAttribute("error","User not found");
+//            RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/login.jsp");
+//            dispatcher.include(request, response);
+//        }
+//        response.sendRedirect(request.getContextPath() + "/WEB-INF/login.jsp");
     }
 }
