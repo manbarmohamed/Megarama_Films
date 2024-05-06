@@ -4,6 +4,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    text-decoration: none;
 }
 ::-webkit-scrollbar {
     width: 3px;
@@ -311,6 +312,23 @@ i{
     padding: 15px;
     background: #0a2f45;
     margin: 5px;
+    position: relative;
+}
+.FF{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    transition: .4s;
+    height: 45px;
+}
+.FF:hover{
+    width: 100%;
 }
 .film-content , .film-content2{
     display: flex;
@@ -365,3 +383,125 @@ i{
     font-size: 15px;
     font-weight: 600;
 }
+
+.popup-container {
+    display: none;
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popup-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #1c2a32;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close-button {
+    color: #ffffff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.horizontal-card {
+    display: flex;
+    align-items: center;
+    background-color: #0a2f45;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.card-image {
+    flex-basis: 40%;
+    max-width: 40%;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-content {
+    flex-basis: 60%;
+    padding: 20px;
+}
+
+.card-content h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+
+}
+
+.card-content p {
+    margin-bottom: 1rem;
+    color: #ffffff;;
+}
+
+.card-link {
+    padding: 10px 20px;
+    border: 2px solid yellow;
+    background: yellow;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .6s;
+}
+
+.card-link:hover {
+    background: rgb(243, 243, 170);
+}
+.favorite-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff6b6b;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.favorite-button i {
+    margin-right: 8px;
+    font-size: 1.2rem;
+}
+
+.favorite-button:hover {
+    background-color: #e5d161;
+}
+
+.favorite-button.active i {
+    color: #ffffff;
+}
+
+
+
+
+
+
+

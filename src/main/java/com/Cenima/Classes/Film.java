@@ -110,6 +110,18 @@ public class Film {
 		this.ticket = ticket;
 	}
 
-	
-
+	@Override
+	public String toString() {
+		return "Film{" +
+				"film_id=" + film_id +
+				", title='" + title + '\'' +
+				", category='" + category + '\'' +
+				", description='" + description + '\'' +
+				", show_time='" + show_time + '\'' +
+				", price='" + price + '\'' +
+				", film_duration='" + film_duration + '\'' +
+				", film_pic='" + film_pic + '\'' +
+				", ticket='" + ticket + '\'' +
+				'}';
+	}
 }

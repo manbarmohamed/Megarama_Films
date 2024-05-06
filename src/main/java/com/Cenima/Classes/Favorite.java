@@ -71,4 +71,24 @@ public class Favorite {
     public void setFavoriteImage(String favoriteImage) {
         this.favoriteImage = favoriteImage;
     }
+
+    @Override
+    public String toString() {
+        return "Favorite{" +
+                "id=" + id +
+                ", film=" + film +
+                ", user=" + user +
+                ", favoriteTitle='" + favoriteTitle + '\'' +
+                ", favoriteCategory='" + favoriteCategory + '\'' +
+                ", favoriteImage='" + favoriteImage + '\'' +
+                '}';
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
 }

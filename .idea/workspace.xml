@@ -9,17 +9,120 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70a6737c-e4ce-45f1-aaee-6518535e06a2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Megarama-cenima.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/Classes/Comments.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/DAO/CommentsDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/DAO/CommentsDAOImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/InsertCommentServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/InsertComment.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/Classes/Favorite.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Cenima/Classes/Favorite.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterDir="false" />
+    <list default="true" id="70a6737c-e4ce-45f1-aaee-6518535e06a2" name="Changes" comment="ajouter la methode delete favrite et reserve film dans la list favorite">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/DAO/FavoriteDAOImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/DAO/FavoriteDAOImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ShowFilms.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ShowFilms.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/deleteMovie.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/deleteMovie.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/CSS/addMovie.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/CSS/deleteMovie.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/CSS/details.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/CSS/home.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/CSS/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/CSS/rg.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/CSS/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/AddRuessi.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/InsertComment.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/InsertFav.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/InsertFilms.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/ShowFilms.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/addMovies.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/bootstrap.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/Classes/Comments.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/Classes/Favorite.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/Classes/Film.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/Classes/Reaction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/Classes/Reservation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/Classes/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/DAO/CommentsDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/DAO/CommentsDAOImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/DAO/DataBaseManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/DAO/FavoriteDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/DAO/FavoriteDAOImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/DAO/FilmsDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/DAO/FilmsDAOImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/DAO/HibernateUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/DAO/ReservationDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/DAO/ReservationDAOImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/DAO/UserDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/DAO/UserDAOImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/Filters/LoginFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/Servlets/DL.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/Servlets/DeleteF.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/Servlets/DeleteFavoriteServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/Servlets/Details.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/Servlets/FavoriteServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/Servlets/Inscription.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/Servlets/InsertCommentServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/Servlets/InsertFilmServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/Servlets/InsertReservation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/Servlets/Login.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/Servlets/Logout.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/Servlets/Reservation_film.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/Servlets/Search.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/Servlets/ShowFilmsServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/hibernate.cfg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/deleteMovie.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/details.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/lib/FastInfoset-1.2.15.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/lib/antlr-2.7.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/lib/byte-buddy-1.12.18.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/lib/classmate-1.5.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/lib/hibernate-commons-annotations-5.1.2.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/lib/hibernate-core-5.6.15.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/lib/istack-commons-runtime-3.0.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/lib/jandex-2.4.2.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/lib/javax.activation-api-1.2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/lib/javax.persistence-api-2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/lib/jaxb-api-2.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/lib/jaxb-runtime-2.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/lib/jboss-logging-3.4.3.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/lib/jboss-transaction-api_1.2_spec-1.1.1.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/lib/mysql-connector-java-8.0.28.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/lib/protobuf-java-3.11.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/lib/stax-ex-1.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/lib/txw2-2.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/registration.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/reservation.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/taglibs.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/Classes/Comments.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/Classes/Favorite.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/Classes/Film.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/Classes/Reaction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/Classes/Reservation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/Classes/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/DAO/CommentsDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/DAO/CommentsDAOImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/DAO/DataBaseManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/DAO/FavoriteDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/DAO/FavoriteDAOImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/DAO/FilmsDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/DAO/FilmsDAOImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/DAO/HibernateUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/DAO/ReservationDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/DAO/ReservationDAOImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/DAO/UserDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/DAO/UserDAOImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/Filters/LoginFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/Servlets/DL.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/Servlets/DeleteF.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/Servlets/DeleteFavoriteServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/Servlets/Details.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/Servlets/FavoriteServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/Servlets/Inscription.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/Servlets/InsertCommentServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/Servlets/InsertFilmServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/Servlets/InsertReservation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/Servlets/Login.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/Servlets/Logout.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/Servlets/Reservation_film.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/Servlets/Search.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/Servlets/ShowFilmsServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,11 +133,11 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="Jsp File" />
         <option value="CSS File" />
-        <option value="Servlet" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Jsp File" />
+        <option value="Servlet" />
       </list>
     </option>
   </component>
@@ -63,53 +166,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Maven.Megarama-cenima [clean].executor": "Run",
-    "Maven.Megarama-cenima [install].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Tomcat Server.Tomcat 8.5.100.executor": "Run",
-    "Tomcat Server.Unnamed.executor": "Run",
-    "git-widget-placeholder": "commentaire",
-    "kotlin-language-version-configured": "true",
-    "last_directory_selection": "C:/Users/MTechno/Desktop/Megarama-cenima/src/main/java",
-    "last_opened_file_path": "C:/Users/user/Desktop/megarama/Megarama-cenima/src/main/webapp/WEB-INF",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "fileTemplates",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Maven.Megarama-cenima [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Megarama-cenima [install].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Tomcat Server.Tomcat 8.5.100.executor&quot;: &quot;Run&quot;,
+    &quot;Tomcat Server.Unnamed.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;favorite&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/MTechno/Desktop/Megarama-cenima/src/main/java&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/MTechno/Desktop/Megarama-cenima/src/main/java/com/Cenima/Servlets&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;fileTemplates&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "XML"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;XML&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\user\Desktop\megarama\Megarama-cenima\src\main\webapp\WEB-INF" />
-      <recent name="C:\Users\user\Desktop\megarama\Megarama-cenima\src\main\java\com\Cenima\DAO" />
       <recent name="C:\Users\MTechno\Desktop\Megarama-cenima\src\main\java\com\Cenima\Servlets" />
       <recent name="C:\Users\MTechno\Desktop\Megarama-cenima\src\main\resources" />
       <recent name="C:\Users\MTechno\Desktop\Megarama-cenima\src\main\java\com\Cenima\DAO" />
+      <recent name="C:\Users\MTechno\Desktop\Megarama-cenima\src\main\webapp\WEB-INF" />
+      <recent name="C:\Users\MTechno\Desktop\Megarama-cenima\src\main\webapp\CSS" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\MTechno\Desktop\Megarama-cenima\src\main\webapp" />
       <recent name="C:\Users\MTechno\Desktop\Megarama-cenima\src\main\webapp\fonts" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.Cenima.Servlets" />
-      <recent name="com.Cenima.Classes" />
     </key>
   </component>
   <component name="RunManager">
@@ -124,7 +223,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="a887eda8-8eb8-426c-8b21-8fcb81a063de" />
+        <option name="BASE_DIRECTORY_NAME" value="27181753-c6da-4291-b356-fcb44a42495b" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -309,9 +408,21 @@
       <workItem from="1714516532550" duration="4856000" />
       <workItem from="1714644378036" duration="7018000" />
       <workItem from="1714661064102" duration="15001000" />
-      <workItem from="1714732358615" duration="1211000" />
-      <workItem from="1714749415038" duration="240000" />
+      <workItem from="1714732358615" duration="8132000" />
+      <workItem from="1714907881690" duration="2542000" />
+      <workItem from="1714910566505" duration="10277000" />
+      <workItem from="1714925696178" duration="6508000" />
+      <workItem from="1714940987192" duration="9237000" />
     </task>
+    <task id="LOCAL-00001" summary="ajouter la methode delete favrite et reserve film dans la list favorite">
+      <option name="closed" value="true" />
+      <created>1714945112829</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1714945112830</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,6 +430,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="ajouter la methode delete favrite et reserve film dans la list favorite" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajouter la methode delete favrite et reserve film dans la list favorite" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

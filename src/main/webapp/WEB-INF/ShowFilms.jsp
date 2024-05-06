@@ -23,6 +23,8 @@
         <li><a href="#">MOVIE</a></li>
         <li><a href="#">ABOUT</a></li>
         <li><a href="/WEB-INF/addMovies.jsp">Admin</a></li>
+        <li><a id="show-popup">Favorite</a></li>
+
     </ul>
 
     <div class="buttons1">
@@ -30,6 +32,29 @@
         <button id="singup">log out</button>
     </div>
 </header>
+
+
+<section>
+    <div id="popup-container" class="popup-container">
+        <div class="popup-content">
+            <span class="close-button">&times;</span>
+        <c:forEach var="fav" items="${favoritesWithDetails}">
+            <div class="horizontal-card">
+                <div class="card-image">
+                    <img src="${fav.getFavoriteImage()}"
+                         alt="Image de la carte" style="width: 100%; height: 135px;">
+                </div>
+                <div class="card-content">
+                    <h3>${fav.getFavoriteTitle()}</h3>
+                    <p>${fav.getFavoriteCategory()}</p>
+                    <a href="details?id=${fav.getFilm().getId_fiml()}" id="book">Book</a>
+                    <a href="del?id=${fav.getId()}" id="book">Delete</a>
+                </div>
+            </div>
+        </c:forEach>
+        </div>
+    </div>
+</section>
 
 <section class="main">
     <div class="container">
@@ -116,9 +141,20 @@
     <c:forEach var="film" items="${listFilms}">
     <div class="S-main-hero">
         <div class="card-film">
-            <div>
-                <i class="fa-solid fa-heart-circle-plus"></i>
-                <a href="#">Favorite</a>
+            <div class="FF">
+                <form action="fav" method="post" >
+
+                    <input type="number" id="id_film" name="id_film" value="${film.getId_fiml()}" style="display: none">
+
+                    <input id="favoriteTitle" name="favoriteTitle" value="${film.getTitle()}" style="display: none"></input>
+
+                    <input type="text" id="favoriteCategory" name="favoriteCategory" value="${film.getCategory()}" style="display: none">
+
+                    <input id="favoriteImage" name="favoriteImage" value="${film.getFilm_pic()}" style="display: none" > </input>
+                    <button type="submit" class="favorite-button">
+                        <i class="far fa-heart"></i> Ajouter aux favoris
+                    </button>
+                </form>
             </div>
             <img  class="cover-img" src="${film.getFilm_pic()}" width="100%">
 
@@ -225,22 +261,60 @@
 
 <script>
     const al = document.getElementById("alert1");
-    if (al.innerHTML === "."){
+    if (al.innerHTML === ".") {
         alert("The Reservation is add Successfully !");
-    }
-    else if(al.innerHTML === ".."){
+    } else if (al.innerHTML === "..") {
         alert("The Reservation is Not added !");
     }
 
 
-    document.getElementById('next').onclick = function(){
+    document.getElementById('next').onclick = function () {
         let lists = document.querySelectorAll('.item');
         document.getElementById('slide').appendChild(lists[0]);
     }
-    document.getElementById('prev').onclick = function(){
+    document.getElementById('prev').onclick = function () {
         let lists = document.querySelectorAll('.item');
         document.getElementById('slide').prepend(lists[lists.length - 1]);
     }
+
+        // Données du film
+
+
+        // Éléments du popup
+        const popupContainer = document.getElementById("popup-container");
+        const closeButton = document.querySelector(".close-button");
+        const showPopupButton = document.getElementById("show-popup");
+
+        // Afficher le popup
+        showPopupButton.addEventListener("click", () => {
+        popupContainer.style.display = "block";
+
+    });
+
+        // Fermer le popup
+        closeButton.addEventListener("click", () => {
+        popupContainer.style.display = "none";
+    });
+
+        window.addEventListener("click", (event) => {
+        if (event.target == popupContainer) {
+        popupContainer.style.display = "none";
+    }
+    });
+    const favoriteButton = document.querySelector('.favorite-button');
+    let isFavorite = false;
+
+    favoriteButton.addEventListener('click', () => {
+        if (!isFavorite) {
+            favoriteButton.classList.add('active');
+            // Ajouter la logique pour sauvegarder l'article dans les favoris
+        } else {
+            favoriteButton.classList.remove('active');
+            // Supprimer la logique pour retirer l'article des favoris
+        }
+        isFavorite = !isFavorite;
+    });
+
 
 </script>
 </body>
