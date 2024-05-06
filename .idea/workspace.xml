@@ -9,17 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70a6737c-e4ce-45f1-aaee-6518535e06a2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/DeleteFavoriteServlet.java" afterDir="false" />
+    <list default="true" id="70a6737c-e4ce-45f1-aaee-6518535e06a2" name="Changes" comment="ajouter la methode delete favrite et reserve film dans la list favorite">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/Classes/Favorite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/Classes/Favorite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/DAO/CommentsDAOImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/DAO/CommentsDAOImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/DAO/FavoriteDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/DAO/FavoriteDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/DAO/FavoriteDAOImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/DAO/FavoriteDAOImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/Filters/LoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/Filters/LoginFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/FavoriteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/FavoriteServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/ShowFilmsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Cenima/Servlets/ShowFilmsServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ShowFilms.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ShowFilms.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/deleteMovie.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/deleteMovie.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/CSS/addMovie.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/CSS/deleteMovie.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/CSS/details.css" beforeDir="false" />
@@ -56,6 +50,7 @@
       <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/Filters/LoginFilter.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/Servlets/DL.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/Servlets/DeleteF.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/Servlets/DeleteFavoriteServlet.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/Servlets/Details.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/Servlets/FavoriteServlet.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Megarama-cenima-1.0-SNAPSHOT/WEB-INF/classes/com/Cenima/Servlets/Inscription.class" beforeDir="false" />
@@ -115,6 +110,7 @@
       <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/Filters/LoginFilter.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/Servlets/DL.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/Servlets/DeleteF.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/Servlets/DeleteFavoriteServlet.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/Servlets/Details.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/Servlets/FavoriteServlet.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/Cenima/Servlets/Inscription.class" beforeDir="false" />
@@ -415,8 +411,18 @@
       <workItem from="1714732358615" duration="8132000" />
       <workItem from="1714907881690" duration="2542000" />
       <workItem from="1714910566505" duration="10277000" />
-      <workItem from="1714925696178" duration="4238000" />
+      <workItem from="1714925696178" duration="6508000" />
+      <workItem from="1714940987192" duration="9237000" />
     </task>
+    <task id="LOCAL-00001" summary="ajouter la methode delete favrite et reserve film dans la list favorite">
+      <option name="closed" value="true" />
+      <created>1714945112829</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1714945112830</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -424,7 +430,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="ajouter la methode delete favrite et reserve film dans la list favorite" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajouter la methode delete favrite et reserve film dans la list favorite" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

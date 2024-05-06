@@ -21,7 +21,7 @@ public class FavoriteDAOImp implements FavoriteDAO{
     public void deleteFavorite(int idFavorite) {
         Session session = HibernateUtil.getSessionFactory().openSession();
         session.beginTransaction();
-        Favorite favorite = (Favorite) session.get(Favorite.class, idFavorite);
+        Favorite favorite =  session.get(Favorite.class, idFavorite);
         session.delete(favorite);
         session.getTransaction().commit();
         session.close();
