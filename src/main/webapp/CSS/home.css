@@ -465,7 +465,7 @@ i{
     font-size: 15px;
     font-weight: 600;
     cursor: pointer;
-    transition: .6s;
+    transition: .5s;
 }
 
 .card-link:hover {
